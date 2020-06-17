@@ -1,18 +1,23 @@
-## TestNet
+# TestNet
+
 This's cross chain asset contract info, it's used to bind asset mapping in different chain, if the name ends with (s) on behalf of the asset is mapping.
-### Ethereum
+
+## Ethereum
+
 Type | Contract Hash | Desc
 ---|---|---
-CCMP | 0xC8042579D6b60E0e35161F228827E3Fa0F51d5B6 | 
+CCMP | 0xC8042579D6b60E0e35161F228827E3Fa0F51d5B6 |
 Lock Proxy | 0xfD22e3EAD9f7B9334dF52f79b607f99C3dBAb37c |
-ERC20 | 0x6C57893347Ff46F0aa3CA935512199421E52DBb3 | 
+ERC20 | 0x6C57893347Ff46F0aa3CA935512199421E52DBb3 |
 OEP4x | 0xBdf64af92dbbF6494bB19AaF85069099a2DDFE64 |
 ONGx | 0xA0006a6cAafDa851E7706C4919E4F3BC3E058209 |
 ONTx | 0xD2B45C29E66f08937753DE346E78243D949BaC65 |
 ETH | 0x0000000000000000000000000000000000000000 |
 BTCx | 0x700CA49ccA3803316124D2A8a44498ABB3E9cF51 |
+NEOx | 0x20f307ea523E69d195b3a370fe6496Eb50ce281a |
 
-### Ontology
+## Ontology
+
 Type | Contract Hash | Desc
 ---|---|---
 Lock Proxy | 50478b75da76f14bb8358318b62897b97de043dd |
@@ -23,3 +28,13 @@ ONT | 0000000000000000000000000000000000000001 |
 ETHx | 08014516ad7cbaecd4f488f80772e41d1611e179 |
 BTCx | b7f398711664de1dd685d9ba3eee3b6b830a7d83 |
 
+## Neo
+
+Type | Contract Hash | Desc
+---|---|---
+CNEO-TEST | B: 0x47e1b8aee4b8ea01a8868d86ed61be50e8f647bb </br> L: bb47f6e850be61ed868d86a801eab8e4aeb8e147 |
+CGAS | B: 0x74f2dc36a68fdc4682034178eb2220729231db76 </br> L: 76db3192722022eb7841038246dc8fa636dcf274 |
+ETHx | B: 0x74fac41ad5ad23921a3400e953e1cafb41240d08 </br> L: 080d2441fbcae153e900341a9223add51ac4fa74 |
+ONTx | B: 0xffd33fc3e0c5f3574ef6a0fd028971a7ff7d3da6 </br> L: a63d7dffa7718902fda0f64e57f3c5e0c33fd3ff |
+CCMC | B: 0x02d9290db5ff0ce5242727fbdbdf01aacc6656f5 </br> L: f55666ccaa01dfdbfb272724e50cffb50d29d902 |
+Lock Proxy | B: 0xa8ed3b1e0337230f1b90028ac3650e318bbec1ad </br> L: adc1be8b310e65c38a02901b0f2337031e3beda8 |
