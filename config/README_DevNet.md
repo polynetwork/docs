@@ -66,3 +66,13 @@ ETH |  |
 BTCx |  |
 NEOx |  |
 
+
+## Router And ChainId
+Type | Router Number | ChainId
+---|---|---
+Bitcoin | 1 | 1
+Ethereum | 2 | 2
+Ontology | 3 | 3
+NEO | 4 | 4
+Cosmos-gaia | 6 | 5
+Switcheo | 6 | 170

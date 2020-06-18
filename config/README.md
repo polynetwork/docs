@@ -47,11 +47,11 @@ Lock Proxy | B: 0xa8ed3b1e0337230f1b90028ac3650e318bbec1ad </br> L: adc1be8b310e
 `L` means little-endian, we usually use it as the asset hash input when we do binding asset hash operation.
 
 
-## Router
-Type | Num
----|---
-Bitcoin | 1
-Ethereum | 2
-Ontology | 3
-NEO | 4
-Cosmos | 6
+## Router And ChainId
+Type | Router Number | ChainId
+---|---|---
+Bitcoin | 1 | 1
+Ethereum | 2 | 2
+Ontology | 3 | 3
+NEO | 4 | 4
+Switcheo | 6 | release soon
