@@ -55,21 +55,22 @@ Lock Proxy | B:  </br> L:  |
 
 ## Cosmos-Gaia
 
-Type | Contract Hash | Desc
----|---|---
-Lock Proxy |  |
-ERC20 |  |
-OEP4x |  |
-ONGx |  |
-ONTx |  |
-ETH |  |
-BTCx |  |
-NEOx |  |
+Type | Denom (coin name) | Asset/Contract Hash | Desc
+:-:|:-:|:-:|:-:
+Lock Proxy | | 64e610af6e533fba5dfacca2b5459036a5d02178 |
+ERC20 | erc20x | 657263323078 |
+OEP4x | oep4x | 6f65703478 |
+ONGx | ongx | 6f6e6778 |
+ONTx | ontx | 6f6e7478 |
+ETHx | ethx | 65746878 |
+BTCx | btcx | 62746378 |
+NEOx | neox | 6e656f78 |
+GASx | gasx | 67617378 |
 
 
 ## Router And ChainId
 Type | Router Number | ChainId
----|---|---
+:-:|:-:|:-:
 Bitcoin | 1 | 1
 Ethereum | 2 | 2
 Ontology | 3 | 3
