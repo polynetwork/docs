@@ -7,28 +7,28 @@ This's cross chain asset contract info, it's used to bind asset mapping in diffe
 Type | Contract Hash | Desc
 ---|---|---
 CCMP | 0xC8042579D6b60E0e35161F228827E3Fa0F51d5B6 | Cross Chain Manager Proxy contract hash 
-Lock Proxy | 0xfD22e3EAD9f7B9334dF52f79b607f99C3dBAb37c | The lock proxy bridge contract hash for asset not implementing the "lock" and "unlock" logic to do cross chain tx
-ERC20 | 0x6C57893347Ff46F0aa3CA935512199421E52DBb3 | ERC20 template contract hash in Ethereum chain
-OEP4x | 0xBdf64af92dbbF6494bB19AaF85069099a2DDFE64 | OEP4x template contract hash in Ethereum chain
-ONGx | 0xA0006a6cAafDa851E7706C4919E4F3BC3E058209 | ONGx contract hash in Ethereum chain
-ONTx | 0xD2B45C29E66f08937753DE346E78243D949BaC65 | ONTx contract hash in Ethereum chain
+Lock Proxy | 0x75ED27ee68F0D6bdd4e41E38388C5A9028Fb6707 | The lock proxy bridge contract hash for asset not implementing the "lock" and "unlock" logic to do cross chain tx
+ERC20 | 0xD1cb2BDA2146C0878b41b5c0164E4420aef72584 | ERC20 template contract hash in Ethereum chain
+OEP4x | 0x63692d2BA64a5869114068b7B08DffED94F378D8 | OEP4x template contract hash in Ethereum chain
+ONGx | 0xA8177Ee8a6E496c701CfeC0cBD8f723cC851153D | ONGx contract hash in Ethereum chain
+ONTx | 0x514092ef689EBAe8EebBCa97fD6987e94B033cCb | ONTx contract hash in Ethereum chain
 ETH | 0x0000000000000000000000000000000000000000 | The asset hash that we treat as the Ether asset
-BTCx | 0x700CA49ccA3803316124D2A8a44498ABB3E9cF51 | Btcx contract hash corresponding with unique btc redeem script
-NEOx | 0x20f307ea523E69d195b3a370fe6496Eb50ce281a | Neox contract hash in Ethereum chain
+BTCx | 0xbbE0dA0f3D5132A5C245D7760d2700E2192fBa39 | Btcx contract hash corresponding with unique btc redeem script
+NEOx |  | Neox contract hash in Ethereum chain
 
 ## Ontology
-
+#### Please donot send from or to Ontology network during upgrade of Ontology testnet
 Type | Contract Hash | Desc
 ---|---|---
-Lock Proxy | B:dd43e07db99728b6188335b84bf176da758b4750 </br> L: 50478b75da76f14bb8358318b62897b97de043dd | The bridge contract hash for asset not implementing the "lock" and "unlock" logic to do cross chain tx
-ERC20x | B: 35e123f9816d05917cf79ef07eb17908ff970c7e </br> L: 7e0c97ff0879b17ef09ef77c91056d81f923e135 | ERC20 template contract hash in Ontology chain
-OEP4 | B: 25ed838b45b0dc19ee453fb68e55df85741b9899 </br> L: 99981b7485df558eb63f45ee19dcb0458b83ed25 | OEP4 template contract hash in Ontology chain
-ONG | B: 0200000000000000000000000000000000000000 </br> L: 0000000000000000000000000000000000000002 | ONG asset hash in Ontology chain
-ONT | B: 0100000000000000000000000000000000000000 </br> L: 0000000000000000000000000000000000000001 | ONT asset hash in Ontology chain
-ETHx | B: 79e111161de47207f888f4d4ecba7cad16450108 </br> L: 08014516ad7cbaecd4f488f80772e41d1611e179 | Ethx asset hash in Ontology chain
-BTCx | B: 837d0a836b3bee3ebad985d61dde64167198f3b7 </br> L: b7f398711664de1dd685d9ba3eee3b6b830a7d83 |  Btcx contract hash in Ontology chain
-CNEOx | B: 4f8d1df75afcab1ed5a361ab45c6376d2129d12b </br> L: 2bd129216d37c645ab61a3d51eabfc5af71d8d4f |  CNEOx contract hash in Ontology chain
-CGASx | B: 7b71a5b519c96b403db233631579ab3ef32c311c </br> L: 1c312cf33eab79156333b23d406bc919b5a5717b | CGasx contract hash in Ontology chain
+Lock Proxy | B: </br> L:  | The bridge contract hash for asset not implementing the "lock" and "unlock" logic to do cross chain tx
+ERC20x | B:  </br> L:  | ERC20 template contract hash in Ontology chain
+OEP4 | B:  </br> L:  | OEP4 template contract hash in Ontology chain
+ONG | B:  </br> L:  | ONG asset hash in Ontology chain
+ONT | B:  </br> L:  | ONT asset hash in Ontology chain
+ETHx | B:  </br> L:  | Ethx asset hash in Ontology chain
+BTCx | B:  </br> L:  |  Btcx contract hash in Ontology chain
+CNEOx | B:  </br> L:  |  CNEOx contract hash in Ontology chain
+CGASx | B:  </br> L:  | CGasx contract hash in Ontology chain
 ## Neo
 
 Type | Contract Hash | Desc
@@ -46,12 +46,25 @@ Lock Proxy | B: 0xa8ed3b1e0337230f1b90028ac3650e318bbec1ad </br> L: adc1be8b310e
 
 `L` means little-endian, we usually use it as the asset hash input when we do binding asset hash operation.
 
+Type | Denom (coin name) | Asset/Contract Hash | Desc
+:-:|:-:|:-:|:-:
+Lock Proxy | | f71b55ef55cedc91fd007f7a9ba386ec978f3aa8 |
+ERC20 | erc20x | 657263323078 |
+OEP4x | oep4x | 6f65703478 |
+ONGx | ongx | 6f6e6778 |
+ONTx | ontx | 6f6e7478 |
+ETHx | ethx | 65746878 |
+BTCx | btcx | 62746378 |
+NEOx | neox | 6e656f78 | not including currently
+GASx | gasx | 67617378 | not including currently
+Cosmos| stake | 7374616b65 | not including currently
 
 ## Router And ChainId
 Type | Router Number | ChainId
----|---|---
+:-:|:-:|:-:
 Bitcoin | 1 | 1
 Ethereum | 2 | 2
 Ontology | 3 | 3
 NEO | 4 | 4
-Switcheo | 6 | release soon
+Cosmos-gaia | 5 | 5
+Switcheo | 5 | release soon
