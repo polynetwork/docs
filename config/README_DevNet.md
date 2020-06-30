@@ -44,7 +44,7 @@ CNEO-TEST | B:  </br> L:  |
 CGAS | B:  </br> L:  |
 ETHx | B:  </br> L:  |
 ONTx | B:  </br> L:  |
-BTCx | B: 0x824552f758d924913d680f2bd93b545e625b0300 </br> L: 00035b625e543bd92b0f683d9124d958f7524582 |
+BTCx | B: 0x92f993e46b3fce732444e6e2ac3d33791e1e372a </br> L: 2a371e1e79333dace2e6442473ce3f6be493f992 |
 COSMOSx | B:  </br> L:  |
 CCMC | B: 0x49554fe8ffe0e8206cc8ee6a7b0986ee82b54543  </br> L: 4345b582ee86097b6aeec86c20e8e0ffe84f5549 |
 Lock Proxy | B: 0x1c9496e52ff64b06502350a8fdacd80e2827f946 </br> L: 46f927280ed8acfda8502350064bf62fe596941c |
