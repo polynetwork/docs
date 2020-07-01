@@ -1,4 +1,4 @@
-# TetNet | [DevNet](README_DevNet.md) 
+# TestNet | [DevNet](README_DevNet.md) 
 
 This's cross chain asset contract info, it's used to bind asset mapping in different chain, if the name ends with (s) on behalf of the asset is mapping.
 
