@@ -1,12 +1,13 @@
 <h1 align="center">How to Deploy Crosschain on Cosmos</h1>
 <h4 align="center">Version 1.0 </h4>
 
-[English](how_to_cross_on_cosmos.md) | 中文
+English | [中文](how_to_cross_on_cosmos_CN.md)
 
-本文档介绍如何在Cosmos子链中添加、设置及使用[跨链模块](https://github.com/polynetwork/cosmos-poly-module.git)包括如何在Cosmos子链的App中初始化不同跨链模块的Keeper，及设置当前链已有资产的跨链配置或设置当前链初始时不存在的资产配置。
+This article mainly introduces how to import, set up and employ the available [modules](https://github.com/polynetwork/cosmos-poly-module.git) in your cosmos application, including how to initialize different keepers of different modules and configure existing asset or non-existing asset in order to carry out cross chain operations through Poly chain Poly chain.
 
-## 对于集成这些模块的Dapp开发者，如何在App中添加跨链模块呢？
-首先在`app.go`中新建这些模块的Keeper并添加到App中。
+## How to integrate these cross chain modules for developers to implement cross chain functionality?
+
+Firstly, add these created module keepers to your decentralized application.
 ```go
 // make sure crosschain keepr has the permission to change supply
 var (
@@ -56,9 +57,9 @@ app.CcmKeeper.MountUnlockKeeperMap(map[string]ccm.UnlockKeeper{
     lockproxy.StoreKey: app.LockProxyKeeper,
 })
 ```
-## 那么每一个模块分别有哪些功能或接口可以使用呢？
+## What method, or interface or message can be used in each module?
 
-### `headersync`模块中函数或消息
+### Messages in `headersync` module
 ```go
 // Msg for syncing poly chain genesis header into current cosmos chain
 type MsgSyncGenesisParam struct {
@@ -71,12 +72,15 @@ type MsgSyncHeadersParam struct {
 	Syncer  sdk.AccAddress      // submitter address
 	Headers [][]byte            // multiple headers of poly chain block header
 }
+
 ```
-### `ccm`模块中函数或消息
-`ccm`代表了跨链管理模块，它主要含有两个函数：
-- 1. 该模块提供了`MsgProcessCrossChainTx`接口供Cosmos relayer提交来自中继链的跨链交易。
-- 2. 提供了`CreateCrossChainTx`接口来供其他模块如`lockproxy`, `btcx`和`ft`模块创建从当前Cosmos子链到其他公链的跨链交易。
-其中第一个接口才会对外开放，由Cosmos relayer使用。
+### Messages in `ccm` module
+Here, `ccm` means "cross chain manager" or "cross chain management". It contains two functions:
+
+- 1. It provides interface for Cosmos relayer to submit cross chain transaction coming from Poly chain. While Cosmos relayer monitoring the poly chain, once it detects a Poly chain native event aiming for current Cosmos subchain, it will get the proof from ledger store of Poly chain and construct a `MsgProcessCrossChainTx` to request for the completion of cross chain transaction on the Cosmos subchain side. Within `ccm` module, the submitted header will be verified first. The `CrossStateRoot` within verified Poly chain header will be used to verify the proof. Then the actual cross chain message or transaction can be obtained. The `ccm` module then checks which module should be responsible for processing the cross chain message and execute the "unlock" logic. Currently, there are three modules can process "unlock" logic, including `lockproxy`, `btcx` and `ft`, which will be introduced later.
+- 2. It provides the `CreateCrossChainTx` interface for `lockproxy`, `btcx` and `ft` modules to create cross chain transaction from current Cosmos subchain to another public chains, say, Ethereum, BTCX, Ontology, or NEO. Within this interface, there will be a unique key and immutable value consisted of current cross chain transaction stored in the ledger to represent the cross chain transaction existing in Cosmos subchain side are completed successfully.
+
+Now we can easily see, `MsgProcessCrossChainTx` is for Cosmos relayer to relay cross chain tx to Cosmos subchain. And `CreateCrossChainTx` function is for other modules to construct cross chain tx from Cosmos subchain. 
 ```go
 // Msg for processing cross chain msg from poly chain to current cosmos chain
 // this message is designed for the cosmos-relayer to invoke
@@ -89,8 +93,8 @@ type MsgProcessCrossChainTx struct {
 }
 ```
 
-### `btcx`模块中函数或消息
-该模块的存在是为了支持一些特殊的资产如BTC，这类资产的特征是某源链没有虚拟机，不支持智能合约，所以该资产从源链跨链到Cosmos链的过程中，其原生资产如BTC是被锁定在一个多签帐户中，通过多签的方式对跨链的原生资产进行管理，其多签脚本的哈希在某种程度上可以理解为源链如BTC链上的合约哈希，该合约哈希锁定的BTC是通过该多签帐户进行跨链操作的BTC资产。
+### Messages in `btcx` module
+This module supports a specific group of asset like BTC, this group of asset usually exist in a POW pulic chain without virtual machine and smart contract. When the asset crossed from its original public chain to Cosmos subchain, the native asset like BTC is usually locked within a multi-signature account in the original public chain. The asset is managed through multiple signature, and the hash of redeem script (called redeem key or redeem hash) can be interpreted as the contract hash. The amount of asset like BTC locked through this specific redeem key is that crossed through the specific multi-signed account address.
 
 ```go
 // Msg for some organizations or service provider to create btc asset contract for cross chain usage.
@@ -126,14 +130,16 @@ type MsgLock struct {
 }
 ```
 
-### `ft`模块中函数或消息
-这里，`ft` 代表了`fungible token`，即同质化资产。该模块具有丰富多样的接口，可供跨链服务提供商、普通用户和发行代币的项目方使用。
-作为服务提供商，使用`ft`模块的方式为：
-- 通过调用`MsgCreateDenom`接口来创建初始总量为零的代币，这样后续可以不通过`lockproxy`模块来实现跨链功能；具体使用的流程如下：
-  - 1、创建代币的人通过`ft`模块内置的方法，即`MsgBindAssetHash`来绑定当前资产与另一条链上相同资产的资产哈希，具体参数的含义下面会介绍到。这里需要注意的是：另一条链上的相同资产一般不能通过`lockproxy`与当前链的当前资产进行绑定映射。
-  - 2、跨链环境设置完毕，用户可在当前Cosmos子链接收到来自`poly chain`的跨链请求后，收到对应资产代币，而且用户可通过cosmos-sdk的`bank`模块进行转账，同时任何拥有该资产的用户也可通过`ft`的`MsgLock`接口将资产转到其他任意支持的链上。也可以通过cosmos-sdk的`supply`模块来查询代币总量，是不是很方便？
+### Messages in `ft` module
 
-- 此外，发行代币的项目方可通过调用`MsgCreateCoins`接口来创建初始总量不为零的代币，且这些初始总量都在创建者的个人帐户中。项目方可通过cosmos-sdk的`bank`模块进行转账。也可通过依赖`lockproxy`来进行跨链操作。
+Here, `ft` denotes the `fungible token`, like the asset follows [OEP4 protocol](https://github.com/ontio/OEPs/blob/master/OEPS/OEP-4.mediawiki) or [ERC20 protocol](https://eips.ethereum.org/EIPS/eip-20). This module contains many interfaces, which can be used by the cross chain service providers, users or some project dev team wishing issuing new tokens.
+As cross chain service provider, the process to use `ft` module is as follow.
+
+- Create zero initial supply through `MsgCreateDenom` interface, such that the created token can bypass `lockproxy` module to realize cross chain functionality. In detail,
+  - 1. The denom creator or token creator can bind current denom with another asset contract hash existing on another public chain through `MsgBindAssetHash`, the notation of each element of this struct is introduced later. To be noticed, in the target public chain, it's better to implement "lock" and "unlock" logic and "bindAssetHash" within asset contract rather than map asset hash with the Cosmos denom hash through `lockproxy' contract.
+  - 2. Once the mapping between current asset hash and the target asset hash is established on both Cosmos subchain and other chains, users can receive designated asset (denom or token) after cosmos relayer submits cross chain transaction from Poly chain to current Cosmos subchain. In addition, users can do transfer between any users within Cosmos subchain through the native module `bank`. Meanwhile, any user holding non-zero tokens can cross his or her tokens from current Cosmos subchain to any other public chains supported by Poly chain through `MsgLock` in `ft` module. And of course, any body can check the total supply of this token within current cosmos subchain through the native `supply` module. Isn't it very convenient?
+
+- Besides, the new coins (tokens) issuer can create non-zero initial supply through `MsgCreateCoins` interface within `ft` module, and the initial owner of these coins will be the creator. The issuer can transfer these tokens through `bank` module, or do cross chain transaction throught `lockproxy`.
 ```go
 // this message is for some service provider/organizations to create some fungible token with zero initial supply and is designed to 
 // perform cross chain transaction within `ft` module with the following two message: `MsgBindAssetHash` and `MsgLock`. 
@@ -174,23 +180,21 @@ type MsgCreateCoins struct {
 
 ### `lockproxy`模块中函数或消息
 
-该模块具有通过跨链代理合约进行跨链交易的通用接口，其调用对象有两种：
+This module contains common interface for cross chain request through `lockproxy` module. There are two types of invokers separated by the roles.
 
-作为服务提供商即代理商，应该进行如下操作来使用`lockproxy`模块。
+As the service provider or lockproxy provider, the instruction to use `lockproxy` module are the followings.
+  1. The `lockproxy` creator (service provider) invoke `MsgCreateLockProxy` to create the globally unique in current cosmos subchain and his or her own lockproxy contract.
+  2. The denom creator can invoke `MsgCreateAndDelegateCoinToProxy` to create non-zero initial supply tokens and delegate them to the reliable (or his own `lockproxy` contract created as the above step). Here "reliable" also including trusting the `lockproxy` contracts in all the other public chains issued by current `lockproxy` creator and their operation of binding or mapping the asset hashes.
+  3. The `lockproxy` creator sets up the map through `MsgBindProxyHash` interface from current `lockproxy` contract hash (same as the creator address in hex format) to the correlated `lockproxy` contract hash in another public chain if it has not been set up before.
+  4. The `lockproxy` creator sets up the map through `MsgBindAssetHash` interface from current asset hash (hex format of bytes from denom) to the same asset hash deployed in another public chain. Note that the creator should also do bindAssetHash in another side of public chain.
+  5. Condition check:
+     1. Coin creator request the reliable `lockproxy` creator to confirm the `BindProxyHash` operation is completed. And anybody can check if the mapping relation between `lockproxy` contract hash is correct through rest client.
+     2. Coin creator request the reliable `lockproxy` creator to confirm the `BindAssetHash` operation is completed. And anybody can check if the mapping relation between asset contract hash is correct through rest client.
+  6. After the configuration of cross chain environment is completed correctly, users can receive coins unlocked from `lockproxy` module account when the cosmos relayer submit the cross chain proof generated on Poly chain and Poly chain block header containing the state root of that proof. Then any user holding non-zero coins can transfer their coins to others through `bank` module within cosmos-sdk or do cross chain transaction to other public chains through `MsgLock` within `lockproxy` module.
 
-    
-  1. 首先通过调用`MsgCreateLockProxy`创建属于Creator自己的lockproxy代理合约。
-  2. 可通过调用`MsgCreateAndDelegateCoinToProxy`创建代币并委托给可信的(也可以是提供商自己创建的`lockproxy`合约，即步骤1创建的)代理合约。此处“信任”的含义也包括信任`lockproxy`创建者在其他所有链进行的所有`BindProxyHash`类似操作。
-  3. 代理商通过调用`MsgBindProxyHash`在本代理合约里设置代理商在另一条链所布署的代理合约，注：这里需要代理商在两条链上进行双向绑定设置。
-  4. 代理商通过调用`MsgBindAssetHash`设置本代理合约支持跨链的资产种类及另一条链相同资产的资产哈希，注：这里需要在另一条链上代理商的代理合约中也进行相似的绑定设置。
-  5. 检查：
-     1. 代币创建者请求其所信任的`lockproxy`合约的创建者，确认其信任的`lockproxy`合约内已经做过了`BindProxyHash`的操作，任何人都可以通过rest客户端来查询映射关系的正确性。
-     2. 代币创建者请求其所信任的`lockproxy`合约的创建者，调用`BindAssetHash`操作且在其他链上也进行相似的操作来设置不同链之间，相同资产的映射。
-  6. 跨链环境设置完毕，用户可在当前Cosmos子链接收到来自`poly chain`的跨链请求后，收到对应资产代币，而且用户可通过cosmos-sdk的`bank`模块进行转账，同时任何拥有该资产的用户也可通过`lockproxy`的`MsgLock`接口将资产转到其他任意支持的链上。
+As users employing the cross chain service, they can do cross chain transaction through `lockproxy.MsgLock` directly, before which it should be noted that they should have enough coins, which can be either those transferred from other accounts or those unlocked from `lockkproxy` module account due to the cross chain transaction submission by cosmos relayer.
 
-作为使用跨链服务的用户，可直接调用`MsgLock`来进行跨链请求。来使用`lockproxy`模块。需要注意的是要确保`MsgLock`的发送者(`MsgLock.FromAddress`)有足够的代币，而这些代币既可以来自Cosmos子链上其他人转过来的，也可以来自其他链资产通过跨链到当前Cosmos子链上发送者(`MsgLock.FromAddress`)地址而来。
-
-下面就详细介绍一下每个接口作用及接口中每个参数的含义。
+Next we explain each part of the struct in detail.
 
 
 ```go
@@ -240,13 +244,14 @@ type MsgLock struct {
 	ToChainId        uint64          // into which chainId, the user wants to do cross chain transaction form current cosmos chain
 	ToAddressBs      []byte          // in `ToChainId`, the receiver address is `ToAddressBs` in bytes format
     Value            *sdk.Int        // the amount of `SourceAssetDenom` the user intends to do cross chain
-                                     //   (from current cosmos chain to another chain with `ToChainId`)
+                                      //   (from current cosmos chain to another chain with `ToChainId`)
 }
 ```
-### 跨链流程
 
-[这里](cosmos_cross_chain_workflow_CN.md)是跨链操作的详细流程。
+### Cosmos Cross Chain Workflow
 
-## 许可证
+[Here](cosmos_cross_chain_workflow.md) explains the cross chain operation in detail.
 
-Poly Network遵守GNU Lesser General Public License, 版本3.0。 详细信息请查看项目根目录下的LICENSE文件。
+## License
+
+The Poly Network library is licensed under the GNU Lesser General Public License v3.0. Please refer to the LICENSE file in the root directory of the project for details.

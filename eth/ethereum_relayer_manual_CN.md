@@ -74,4 +74,4 @@ PrivateKey&Signer                        -           以上准备好的以太账
 
 ## 许可证
 
-Ontology遵守GNU Lesser General Public License, 版本3.0。 详细信息请查看项目根目录下的LICENSE文件。
+Poly Network遵守GNU Lesser General Public License, 版本3.0。 详细信息请查看项目根目录下的LICENSE文件。

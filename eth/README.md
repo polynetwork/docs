@@ -55,9 +55,9 @@ The relay chain system can identify and withstand forks. The synchronization pro
 
 ### Synchronizing Relay Chain Block Headers on Ethereum
 
-Synchronizing relay chain block headers Ethereum also occurs in a similar manner. An initial block header is selected from where the synchronization process begins, and all the subsequent blocks are synchronized, including the initial block header.
+Synchronizing relay chain block headers on Ethereum also occurs in a similar manner. An initial block header is selected from where the synchronization process begins, and all the subsequent blocks are synchronized.
 
-Relay chain headers synchronized on Ethereum :
+Relay chain headers synchronized on Ethereum:
 
 <div align=center><img width="480" height="200" src="pic/poly_hdrs.png"/></div>
 

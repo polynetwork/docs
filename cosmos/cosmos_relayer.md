@@ -1,56 +1,61 @@
-<h1 align="center">COSMOS Relayer</h1>
+<h1 align="center">Cosmos Relayer</h1>
 <h4 align="center">Version 1.0 </h4>
 
-[English]() | 中文
+English | [中文](cosmos_relayer_CN.md)
 
-## 引言
+## Introduction
+When we want to cross the coins from Cosmos chain to other public chains, there should exist cosmos relayers running. It mainly complete two functionalities, which are submitting cross chain request from Cosmos subchain to Poly chain and submitting cross chain request from Poly chain to Cosmos subchain.
 
-在将COSMOS上的Coin转到其他链的时候，需要在中继链和COSMOS中间启动一个Relayer。Relayer会将COSMOS上的跨链请求及其证明搬运到中继链，中继链可以验证这个跨链请求确实在COSMOS上执行成功了，然后再生成证明，表示这个跨链请求是验证通过的，其他链的Relayer会将这个来自COSMOS的跨链请求搬运到下一条链，最后在目标链为指定账户增发资产。
+When the cross chain transaction is to Cosmos subchain, the cosmos relayer is responsible for monitoring event emitted our from Cosmos subchain cross chain manager and fetching the proof of cross chain transaction, then relayer needs to submit the proof and next block header containing the state root of proof to Poly chain. Then Poly chain can verify if the cross chain transaction is executed successfully in Cosmos subchain, and generate the Poly chain proof to indicate the cross chain request from Cosmos subchain is valid, the relative relayer responsible for relaying cross chain transaction to the relative public chain will submit the Poly chain proof along with next Poly chain block header to the relative public chain cross chain manager to process the transaction, either unlock tokens from `lockproxy` contract or mint tokens to the receiver.
 
-Relayer搬运的信息是请求内容、证明和区块头。请求内容包含了目标链ID、账户地址、跨链金额，目标链ID是目标区块链网络在跨链生态中唯一的标识，比如比特币是1，账户地址是在目标链接收资产的地址，比如跨链转1BTC，那么在目标链账户地址上将有1BTCX（BTCX是BTC在目标链的映射，可视为一种凭证，它与BTC是一一对应的）；”证明“可以证明跨链请求交易在COSMOS链上且已经成功执行，中继链需要这个证明来确认跨链请求的合法性；”区块头“是COSMOS的区块头，是取证明高度的下一个区块头，用来验证”证明“的正确性，即计算”证明“的根，验证区块头中的AppStateRoot与根是否相等，类似于MerkleProof的证明过程，若相等，则跨链请求合法。
+The information relayed by the relayer includes cross chain transaction proof, and the Cosmos subchain block header (next block header of the cross chain transaction execution header) containing state root of transaction proof. The proof contains `toChainId`, `toAddress`, `amount`. `toChainId` means the target chainId in Poly chain, `toAddress` means the receiver address in bytes format on target chain, and `amount` means the crossed asset amount. Poly chain will first verify the Cosmos block header, then the application state root within Cosmos block header can help verify the validity of transaction proof (indicating the cross chain request are successfully executed on Cosmos chain), and obtain the actual cross chain transaction message. 
 
-同样地，Relayer也会把到COSMOS的跨链请求搬运到COSMOS，crosschain模块可以验证并处理跨链请求。
+Similarly, the cosmos relayer also submits cross chain transaction from Poly chain to Cosmos subchain, the `cosmos-poly-module.ccm` module will verify and execute cross chain request.
 
-## 架构
+## Framework
 
-Relayer监听COSMOS每个高度的事件，在高度h发现跨链交易Tx1、Tx2，从大于h的高度H获取交易的Proof，这个Proof由crosschain模块产生，以及H+1高度的区块头，首先向中继链发送包含COSMOS区块头的交易，等到该交易在中继链落账之后，Relayer并发发送交易及其Proof，中继链就可以通过区块头验证Proof。
+Cosmos relayer listens to cross chain event of each height, when there is cross chain transactions tx1 and tx2 in height h, the relayer will get proof from height H where H is higher than h. The proof originated from `ccm` module at height H, and Cosmos subchain block header of height H+1 will be submitted to Poly chain, Poly chain then will verify the validity of header of H+1, after which the proof will be verified and the cross chain message will be extracted to be processed on Poly chain.
+
 
 <div align=center><img width="500" height="440" src="./pic/cosmos2poly.png"/></div>
 
-类似地，Relayer会把中继链上的跨链请求转发到COSMOS上。Relayer监听中继链的事件，如果发现事件中包含跨链到COSMOS的事件，则获取事件中的Proof和下一个高度的区块头，组装成COSMOS的交易，由Relayer发到COSMOS，Relayer需要为此支付手续费，COSMOS的crosschain模块会验证Proof并增发对应的代币，实现其他虚拟货币跨链到COSMOS链。
+Similarly, Cosmos relayer also listens to the cross chain event from Poly chain, and submit the related proof and header to Cosmos subchain. The `ccm` module of Cosmos subchain will verify the Poly chain header and execute cross chain transaction, either mint coins to the receiver or transfer coins from `lockproxy` module account to the receiver. The difference currently lies in that Cosmos relayer needs to pay off the Cosmos subchain transaction fee. 
 
 <div align=center><img width="500" height="440" src="./pic/poly2cosmos.png"/></div>
 
-## 使用
+## Usage
 
-下载代码编译，配置文件如下：
+Downloading the relayer codes and build, then set up your configuration as the following.
+
 
 ```json
 {
-  "cosmos_rpc_addr": "http://ip:port", //COSMOS的RPC地址
-  "cosmos_wallet": "/path/to/cosmos_key", // cosmos的钱包文件，使用gaiacli导出
-  "cosmos_wallet_pwd": "pwd", // 对应的密码
-  "cosmos_start_height": 0, // Relayer扫描开始的COSMOS高度
-  "cosmos_listen_interval": 1, // 扫描间隔（秒）
-  "cosmos_chain_id": "testing", // COSMOS启动的网络ID
-  "cosmos_gas_price": "0.00001stake", // 发送COSMOS交易的gas price
-  "cosmos_gas": 200000, // 一笔交易的gas上限
+  "cosmos_rpc_addr": "http://ip:port", //Cosmos rpc address
+  "cosmos_wallet": "/path/to/cosmos_key", // cosmos wallet exported through gaia client
+  "cosmos_wallet_pwd": "pwd", // the password correlated with the above wallet account
+  "cosmos_start_height": 0, // the height from which cosmos relayer begins to scan cosmos event
+  "cosmos_listen_interval": 1, // the time interval of cosmos relayer scanning cosmos event 扫描间隔（秒）
+  "cosmos_chain_id": "testing", // the chain id of Cosmos subchain
+  "cosmos_gas_price": "0.00001stake", // the gas price of tx sending to Cosmos subchain
+  "cosmos_gas": 200000, // the maximum gas of one Cosmos transaction
 
-  "poly_rpc_addr": "http://172.168.3.73:40336", // 中继链的RPC地址
-  "poly_wallet": "wallet.dat", // 中继链钱包
-  "poly_wallet_pwd": "pwd", // 中继链钱包密码
-  "poly_start_height": 0, // 扫描的起始高度
-  "poly_listen_interval": 1, // 扫描间隔时间（秒）
-  "poly_to_cosmos_key": "makeProof", // 跨链事件关键字
+  "poly_rpc_addr": "http://172.168.3.73:40336", // Poly chain rpc address
+  "poly_wallet": "wallet.dat", // Poly chain wallet path and name
+  "poly_wallet_pwd": "pwd", // Poly chain wallet password
+  "poly_start_height": 0, // the height from which cosmos relayer begins to scan Poly chain
+  "poly_listen_interval": 1, // the time interval of cosmos relayer scanning Poly chain event
+  "poly_to_cosmos_key": "makeProof", // cross chain event keywords from which Cosmos relayer obtain the proof from storage
 
-  "db_path": "cosmos-relayer/db", // DB
+  "db_path": "cosmos-relayer/db", // the database path maintained by the cosmos relayer
   "log_level": 2 // 0: TRACE, 1: DEBUG:, 2: INFO, 3: WARN, 4: ERROR
 }
 ```
-
-准备好自己的配置文件，就可以运行Relayer了。如果没有配置钱包密码，启动的时候需要输入对应钱包的密码。
-
+When we set up the configuration file, the Cosmos relayer is ready to run. If there is no password in the config file, we need to input password when we launch the cosmos relayer.
 ```go
 go build -o run_cosmos_relayer cmd/run.go
 ./run_cosmos_relayer -conf=conf.json
 ```
+
+## License
+
+The Poly Network library is licensed under the GNU Lesser General Public License v3.0. Please refer to the LICENSE file in the root directory of the project for details.
