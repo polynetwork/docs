@@ -28,7 +28,7 @@ Similarly, Cosmos relayer also listens to the cross chain event from Poly chain,
 Downloading the relayer codes and build, then set up your configuration as the following.
 
 
-```json
+```text
 {
   "cosmos_rpc_addr": "http://ip:port", //Cosmos rpc address
   "cosmos_wallet": "/path/to/cosmos_key", // cosmos wallet exported through gaia client

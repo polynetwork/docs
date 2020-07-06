@@ -247,6 +247,9 @@ type MsgLock struct {
 
 [这里](cosmos_cross_chain_workflow_CN.md)是跨链操作的详细流程。
 
+### 例子
+有关资产跨链的协议例子可参考[PIP-1](https://github.com/polynetwork/PIPs/blob/master/PIPS/pip-1.md)。
+
 ## 许可证
 
 Poly Network遵守GNU Lesser General Public License, 版本3.0。 详细信息请查看项目根目录下的LICENSE文件。

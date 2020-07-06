@@ -178,7 +178,7 @@ type MsgCreateCoins struct {
 }
 ```
 
-### `lockproxy`模块中函数或消息
+###  Messages in `lockproxy` module
 
 This module contains common interface for cross chain request through `lockproxy` module. There are two types of invokers separated by the roles.
 
@@ -252,6 +252,8 @@ type MsgLock struct {
 
 [Here](cosmos_cross_chain_workflow.md) explains the cross chain operation in detail.
 
+### Example
+About the asset cross chain interoperability, please refer to this proposal, [PIP-1](https://github.com/polynetwork/PIPs/blob/master/PIPS/pip-1.md).
 ## License
 
 The Poly Network library is licensed under the GNU Lesser General Public License v3.0. Please refer to the LICENSE file in the root directory of the project for details.

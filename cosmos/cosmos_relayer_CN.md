@@ -15,17 +15,17 @@ Relayer搬运的信息是证明和区块头。证明中包含了目标链ID、�
 
 Relayer监听Cosmos每个高度的事件，在高度h发现跨链交易Tx1、Tx2，从大于h的高度H获取交易的Proof，这个Proof由`ccm`模块产生，以及H+1高度的区块头，首先向中继链发送包含Cosmos区块头的交易，等到该交易在中继链落账之后，Relayer并发发送交易及其Proof，中继链就可以通过区块头验证Proof。
 
-<div align=center><img width="500" height="440" src="./pic/Cosmos2poly.png"/></div>
+<div align=center><img width="500" height="440" src="./pic/cosmos2poly.png"/></div>
 
 类似地，Relayer会把中继链上的跨链请求转发到Cosmos上。Relayer监听中继链的事件，如果发现事件中包含跨链到Cosmos的事件，则获取事件中的Proof和下一个高度的区块头，组装成Cosmos的交易，由Relayer发到Cosmos，Relayer需要为此支付手续费，Cosmos的`ccm`模块会验证Proof并增发对应的代币，实现其他虚拟货币跨链到Cosmos链。
 
-<div align=center><img width="500" height="440" src="./pic/poly2Cosmos.png"/></div>
+<div align=center><img width="500" height="440" src="./pic/poly2cosmos.png"/></div>
 
 ## 使用
 
 下载代码编译，配置文件如下：
 
-```json
+```text
 {
   "Cosmos_rpc_addr": "http://ip:port", //Cosmos的RPC地址
   "Cosmos_wallet": "/path/to/Cosmos_key", // Cosmos的钱包文件，使用gaiacli导出

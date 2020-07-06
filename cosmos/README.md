@@ -65,7 +65,7 @@ There is no need to synchronize all the Poly chain block header to Cosmos subcha
 
 Poly chain headers synchronized on Cosmos subchain:
 
-<div align=center><img width="480" height="200" src="pic/orchain_hdrs.png"/></div>
+<div align=center><img width="480" height="200" src="pic/polychain_hdrs.png"/></div>
 
 
 ### Transactions from Cosmos subchain to Poly Chain
@@ -90,7 +90,7 @@ Sending a transaction from the Poly chain to Cosmos subchain is much like the op
 
 The process flow of cross chain transaction from Cosmos to other chains:
 
-<div align=center><img width="550" height="400" src="pic/cross_progress.png"/></div>
+<div align=center><img width="550" height="400" src="pic/cross_process.png"/></div>
 
 1. The user sends a cross chain transaction from Cosmos subchain that, for instance, transfer 1` Atom from account A on Cosmos subchain to account B on the target chain
    

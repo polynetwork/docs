@@ -61,7 +61,7 @@ Cosmos链区块头同步到中继链需要首先指定一个Cosmos链上任意�
 
 中继链区块头同步到Cosmos链：
 
-<div align=center><img width="480" height="200" src="pic/orchain_hdrs.png"/></div>
+<div align=center><img width="480" height="200" src="pic/polychain_hdrs.png"/></div>
 
 
 ### 从Cosmos跨链到中继链
@@ -77,7 +77,7 @@ Cosmos子链跨链到中继链：
 ### 从中继链跨链到Cosmos链
 
 可以分为提交区块头和交易证明、Cosmos子链执行跨链交易两部分：
-
+ 
 - Relayer会把中继链的区块头提交到Cosmos子链`ccm`模块，该模块维护了中继链的区块头；
 - Relayer监听中继链跨链管理合约，捕捉目标链为Cosmos子链的跨链事件，提交跨链事件以及中继链的交易证明到Cosmos子链，然后`ccm`模块中的`ProcessCrosschainTx`函数会用中继链的区块头中状态根来验证交易证明，并解析出跨链具体消息，然后执行`unlock`逻辑将跨链资产从`ccm`的模块帐户解锁给用户。
 
@@ -85,7 +85,7 @@ Cosmos子链跨链到中继链：
 
 Cosmos子链跨链到目标链的工作流程：
 
-<div align=center><img width="550" height="400" src="pic/cross_progress.png"/></div>
+<div align=center><img width="550" height="400" src="pic/cross_process_cn.png"/></div>
 
 1. 用户从Cosmos子链发送跨链交易，如Cosmos子链上的账户A通过调用`MsgLock`发起跨链请求，想将1个Atom给Target Chain的账户B；
 
