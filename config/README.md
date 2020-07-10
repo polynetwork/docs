@@ -14,7 +14,7 @@ ONGx | 0xA8177Ee8a6E496c701CfeC0cBD8f723cC851153D | ONGx contract hash in Ethere
 ONTx | 0x514092ef689EBAe8EebBCa97fD6987e94B033cCb | ONTx contract hash in Ethereum chain
 ETH | 0x0000000000000000000000000000000000000000 | The asset hash that we treat as the Ether asset
 BTCx | 0xbbE0dA0f3D5132A5C245D7760d2700E2192fBa39 | Btcx contract hash corresponding with unique btc redeem script
-NEOx |  | Neox contract hash in Ethereum chain
+NEOx | 0x3DB9D2FF5A878A70f049cFD5Cb3D884EA7EF539F | Neox contract hash in Ethereum chain
 
 ## Ontology
 #### Please donot send from or to Ontology network during upgrade of Ontology testnet
