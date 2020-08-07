@@ -6,14 +6,14 @@ This's cross chain asset contract info, it's used to bind asset mapping in diffe
 
 Type | Contract Hash | Desc
 ---|---|---
-CCMP | 0xC8042579D6b60E0e35161F228827E3Fa0F51d5B6 | Cross Chain Manager Proxy contract hash 
-Lock Proxy | 0x75ED27ee68F0D6bdd4e41E38388C5A9028Fb6707 | The lock proxy bridge contract hash for asset not implementing the "lock" and "unlock" logic to do cross chain tx
-ERC20 | 0xD1cb2BDA2146C0878b41b5c0164E4420aef72584 | ERC20 template contract hash in Ethereum chain
-OEP4x | 0x63692d2BA64a5869114068b7B08DffED94F378D8 | OEP4x template contract hash in Ethereum chain
-ONGx | 0xA8177Ee8a6E496c701CfeC0cBD8f723cC851153D | ONGx contract hash in Ethereum chain
-ONTx | 0x514092ef689EBAe8EebBCa97fD6987e94B033cCb | ONTx contract hash in Ethereum chain
+CCMP | 0x87FdA0ceD9aEb973E7e8655584DeEC77658546cC | Cross Chain Manager Proxy contract hash 
+Lock Proxy | 0x388Ed8B73bd707A78034E1d157fA08Da24095c18 | The lock proxy bridge contract hash for asset not implementing the "lock" and "unlock" logic to do cross chain tx
+ERC20 | 0x8142d8936A3571F6F4777716D37b1Dd4c1Ca1d93 | ERC20 template contract hash in Ethereum chain
+OEP4x | 0x27A9206bbF288e469AaCC2168E621e503c2bc846 | OEP4x template contract hash in Ethereum chain
+ONGx | 0xFb37c160CFBd8BD4Ba6df6f70e2449b6EB83fc26 | ONGx contract hash in Ethereum chain
+ONTx | 0x147CB77cFd0D3A0932D859820d1A3DB9686396F9 | ONTx contract hash in Ethereum chain
 ETH | 0x0000000000000000000000000000000000000000 | The asset hash that we treat as the Ether asset
-BTCx | 0xbbE0dA0f3D5132A5C245D7760d2700E2192fBa39 | Btcx contract hash corresponding with unique btc redeem script
+BTCx | 0xA427C5994C2e00272516140836D21BdC3A538c79 | Btcx contract hash corresponding with unique btc redeem script
 NEOx | 0x3DB9D2FF5A878A70f049cFD5Cb3D884EA7EF539F |
 
 ## Ontology
@@ -21,13 +21,13 @@ NEOx | 0x3DB9D2FF5A878A70f049cFD5Cb3D884EA7EF539F |
 
 Type | Contract Hash | Desc
 ---|---|---
-Lock Proxy | B: </br> L:  | The bridge contract hash for asset not implementing the "lock" and "unlock" logic to do cross chain tx
-ERC20x | B:  </br> L:  | ERC20 template contract hash in Ontology chain
-OEP4 | B:  </br> L:  | OEP4 template contract hash in Ontology chain
-ONG | B:  </br> L:  | ONG asset hash in Ontology chain
-ONT | B:  </br> L:  | ONT asset hash in Ontology chain
-ETHx | B:  </br> L:  | Ethx asset hash in Ontology chain
-BTCx | B:  </br> L:  |  Btcx contract hash in Ontology chain
+Lock Proxy | B: f4b57dee05beb0be928cb57b17f2db96d5187053 </br> L: 537018d596dbf2177bb58c92beb0be05ee7db5f4 | The bridge contract hash for asset not implementing the "lock" and "unlock" logic to do cross chain tx
+ERC20x | B:8c8257c1f58533e906f6e24ae06d06be0fc16432  </br> L: 3264c10fbe066de04ae2f606e93385f5c157828c  | ERC20 template contract hash in Ontology chain
+OEP4 | B: 34661f6e90f3d590bbe0281a76935f94bd459532 </br> L: 329545bd945f93761a28e0bb90d5f3906e1f6634 | OEP4 template contract hash in Ontology chain
+ONG | B: 0200000000000000000000000000000000000000 </br> L: 0000000000000000000000000000000000000002 | ONG asset hash in Ontology chain
+ONT | B: 0100000000000000000000000000000000000000 </br> L: 0000000000000000000000000000000000000002 | ONT asset hash in Ontology chain
+ETHx | B: 1fd76f19e621816de34c5c74643ca69aeeab4d42 </br> L: 424dabee9aa63c64745c4ce36d8121e6196fd71f | Ethx asset hash in Ontology chain
+BTCx | B: aa0e7aede9c0d5b599b9908237f3df84d7260be5 </br> L: e50b26d784dff3378290b999b5d5c0e9ed7a0eaa |  Btcx contract hash in Ontology chain
 CNEOx | B:  </br> L:  |  CNEOx contract hash in Ontology chain
 CGASx | B:  </br> L:  | CGasx contract hash in Ontology chain
 

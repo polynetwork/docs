@@ -79,5 +79,5 @@ Bitcoin | 1 | 1
 Ethereum | 2 | 2
 Ontology | 3 | 3
 NEO | 4 | 4
-Cosmos-gaia | 6 | 6
-Switcheo | 6 | 170
+Cosmos-gaia | 5 | 8
+Switcheo | 5 | 182
