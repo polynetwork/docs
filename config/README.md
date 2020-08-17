@@ -1,6 +1,6 @@
-# TestNet | [DevNet](README_DevNet.md) 
+# [MainNet](README_MainNet.md) | TestNet | [DevNet](README_DevNet.md) 
 
-This's cross chain asset contract info, it's used to bind asset mapping in different chain, if the name ends with (s) on behalf of the asset is mapping.
+This's cross chain asset contract info on <strong>TESTNET</strong>, it's used to bind asset mapping in different chain, if the name ends with (s) on behalf of the asset is mapping.
 
 ## Ethereum
 
