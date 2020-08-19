@@ -2,6 +2,15 @@
 
 This's cross chain asset contract info ONLY in <strong>MAINNET</strong> mode, it's used to bind asset mapping in different chain, if the name ends with (s) on behalf of the asset is mapping.
 
+
+## Decentralized Application MainNet Nodes
+Chain | IP | Rpc Port
+---|---|---
+Poly | ```http://seed1.poly.network``` | 20336
+Neo | ```http://seed9.ngd.network``` | 10332
+
+
+
 ## Btc
 
 

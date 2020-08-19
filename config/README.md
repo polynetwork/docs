@@ -2,6 +2,14 @@
 
 This's cross chain asset contract info on <strong>TESTNET</strong>, it's used to bind asset mapping in different chain, if the name ends with (s) on behalf of the asset is mapping.
 
+## Decentralized Application TestNet Nodes
+Chain | IP | Rpc Port
+---|---|---
+Poly | ```http://beta1.poly.network``` | 21336
+Neo | ```http://seed9.ngd.network``` | 20332
+
+
+
 ## Ethereum
 
 Type | Contract Hash | Desc
