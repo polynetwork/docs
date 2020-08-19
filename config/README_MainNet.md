@@ -7,7 +7,7 @@ This's cross chain asset contract info ONLY in <strong>MAINNET</strong> mode, it
 Chain | IP | Rpc Port
 ---|---|---
 Poly | ```http://seed1.poly.network``` | 20336
-Neo | ```http://seed9.ngd.network``` | 10332
+Neo | ```http://seed9.ngd.network``` | 11332
 
 
 
