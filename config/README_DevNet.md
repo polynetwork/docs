@@ -1,4 +1,4 @@
-# [MainNet](README_MainNet.md) | [TestNet](README.md) | DevNet
+# [MainNet](README.md) | [TestNet](README_TestNet.md) | DevNet
 
 This's cross chain asset contract info ONLY in <strong>DevNet</strong> mode, it's used to bind asset mapping in different chain, if the name ends with (s) on behalf of the asset is mapping.
 
