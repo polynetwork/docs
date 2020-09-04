@@ -16,7 +16,7 @@ Type | Contract Hash | Desc
 ---|---|---
 CCMP | 0xb600c8a2e8852832B75DB9Da1A3A1c173eAb28d8 | Cross Chain Manager Proxy contract hash 
 ECCD | 0xA38366d552672556CE82426Da5031E2Ae0598dcD | Ethereum Cross Chain Data contract hash
-ECCM | 0x726532586C50ec9f4080B71f906a3d9779bbd64F | Ethereum Cross Chain Manager contract hash
+ECCM | 0x726532586C50ec9f4080B71f906a3d9779bbd64F   | Ethereum Cross Chain Manager contract hash
 Lock Proxy | 0xD8aE73e06552E270340b63A8bcAbf9277a1aac99 | The lock proxy bridge contract hash for asset not implementing the "lock" and "unlock" logic to do cross chain tx
 ERC20 | 0x276788aF4a803781267c84692416311DE1F761f9 | ERC20 template contract hash in Ethereum chain
 OEP4x | 0x3105A14F7956D33a51F12eF3AE50A3f1eF161Dff | OEP4x template contract hash in Ethereum chain
@@ -26,8 +26,8 @@ ETH | 0x0000000000000000000000000000000000000000 | The asset hash that we treat 
 USDT | 0xad3f96ae966ad60347f31845b7e4b333104c52fb | USD Tether 
 WBTC | 0x557563dc4ed3fd256eBA55B9622f53331ab97c2f | WBTC 
 DAI | 0x8Cad2301F7348DFc10C65778197028F432d51e76 | DAI 
-BTCx |  | Btcx contract hash corresponding with unique btc redeem script
-NEOx |  |
+BTCx | 0x92705a16815A3d1AEC3cE9Cc273C5aa302961FcC | Btcx contract hash corresponding with unique btc redeem script
+NEOx | 0x7E269f2f33A97C64192e9889FAeEC72A6fcdB397 |
 
 ## Ontology
 #### Please donot send from or to Ontology network during upgrade of Ontology testnet
