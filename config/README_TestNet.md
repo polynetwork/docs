@@ -39,12 +39,13 @@ ERC20x | B: e930755b130dccb25dc3cfee2b2e30d9370c1a75  </br> L: 751a0c37d9302e2be
 OEP4 | B: 969850e009b5e2a061694f3479ec8e44bc68bcd3 </br> L: d3bc68bc448eec79344f6961a0e2b509e0509896 | OEP4 template contract hash in Ontology chain
 ONG | B: 0200000000000000000000000000000000000000 </br> L: 0000000000000000000000000000000000000002 | ONG asset hash in Ontology chain
 ONT | B: 0100000000000000000000000000000000000000 </br> L: 0000000000000000000000000000000000000002 | ONT asset hash in Ontology chain
+ONTD | B: 2e0de81023ea6d32460244f29c57c84ce569e7b7 </br> L: b7e769e54cc8579cf2440246326dea2310e80d2e | ONT asset hash in Ontology chain
 ETHx | B: 7448f5f18088c566a3e78c207ea0f06b0aea58b6 </br> L: b658ea0a6bf0a07e208ce7a366c58880f1f54874 | Ethx asset hash in Ontology chain
 USDTx | B: 11c60400f54c17df0d8e9c4a38c333b66c1f1c54 </br> L: 541c1f6cb633c3384a9c8e0ddf174cf50004c611 | USDT on Ontology 
 WBTCx | B:  c984a8fa8d3b4c9399e36b5e257d9e150d0480a1</br> L: a180040d159e7d255e6be399934c3b8dfaa884c9 | WBTC 
 DAI | B: 3249446364433365f075793e298ee3327c1fcb58</br> L: 58cb1f7c32e38e293e7975f06533436463444932 | DAI 
 BTCx | B:  </br> L: |  Btcx contract hash in Ontology chain
-CNEOx | B:  </br> L:  |  CNEOx contract hash in Ontology chain
+CNEOx | B: ccee89c6db3e80bd333f89d7d91d4aea1eedae92 </br> L: 92aeed1eea4a1dd9d7893f33bd803edbc689eecc |  CNEOx contract hash in Ontology chain
 CGASx | B:  </br> L:  | CGasx contract hash in Ontology chain
 
 ## Neo
