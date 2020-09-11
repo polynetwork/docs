@@ -24,6 +24,12 @@ ECCM | 0x838bf9e95cb12dd76a54c9f9d2e3082eaf928270 | Ethereum Cross Chain Manager
 
 ## Ontology
 
+Type | Contract Hash | Desc
+---|---|---
+ONTd | 1e0846d9d569157465be0f410f236405a981ca3e | ONT with 9 decimal contract hash 
+oUSDT | 596ce8d089b2a1c92f177e5c34710f129ee933db | Ontology wrapped USDT (Ethereum) Cross Chain asset contract hash
+oWBTC | d313e40cee5b48e181172f294331b7f1ee270da4 | Ontology wrapped WBTC (Ethereum) Cross Chain asset contract hash
+
 ## Neo
 Type | Contract Hash | Desc
 ---|---|---
