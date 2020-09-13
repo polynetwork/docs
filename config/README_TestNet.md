@@ -45,7 +45,7 @@ ONT | B: 0100000000000000000000000000000000000000 </br> L: 000000000000000000000
 Type | Contract Hash | Desc
 ---|---|---
 ONTd | 1e0846d9d569157465be0f410f236405a981ca3e | ONT with 9 decimal contract hash 
-oUSDT | fd1c03211cf07635599e4c64104c236d778d0b6c | Ontology wrapped USDT (Ethereum) Cross Chain asset contract hash
+oUSDT | B: a1825c806272f43de93b821f545d3452ad588ee3 </br>L: e38e58ad52345d541f823be93df47262805c82a1 | Ontology wrapped USDT (Ethereum) Cross Chain asset contract hash
 oWBTC | cf6d9a9ae9676f7a7f4cb135eb80be28a325e4b4 | Ontology wrapped WBTC (Ethereum) Cross Chain asset contract hash
 
 (to be updated)
