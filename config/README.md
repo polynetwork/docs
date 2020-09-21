@@ -69,7 +69,12 @@ Type | Contract Hash | Desc
 ETHx | B: 0x17c76859c11bc14da5b3e9c88fa695513442c606 </br> L: 06c642345195a68fc8e9b3a54dc11bc15968c717 | Eth asset hash in Neo chain
 ONTx | B: 0x271e1e4616158c7440ffd1d5ca51c0c12c792833 </br> L: 3328792cc1c051cad5d1ff40748c1516461e1e27 | ONT asset hash in Neo chain
 CCMC | B: 0x82a3401fb9a60db42c6fa2ea2b6d62e872d6257f </br> L: 7f25d672e8626d2beaa26f2cb40da6b91f40a382 | Cross Chain Manager Contract
-Lock Proxy | B: 0x82e749792af617d66593ef14eb34331ed58a0fcb </br> L: cb0f8ad51e3334eb14ef9365d617f62a7949e782 | The lock proxy bridge contract hash for asset not implementing the "lock" and "unlock" logic to do cross chain tx
+Lock Proxy | B: 0xe7fb2e1d937e71dbbb512e6375746181127282e7 </br> L: e782721281617475632e51bbdb717e931d2efbe7 | The lock proxy bridge contract hash for asset not implementing the "lock" and "unlock" logic to do cross chain tx
+pnWETH | B: 0x0df563008be710f3e0130208f8adc95ed7e5518d </br> L: 8d51e5d75ec9adf8080213e0f310e78b0063f50d | nWETH asset hash in Neo chain
+nNEO | B: 0xf46719e2d16bf50cddcef9d4bbfece901f73cbb6 </br> L: b6cb731f90cefebbd4f9cedd0cf56bd1e21967f4 | NEP5 aeest hash of NEO
+pONT | B: 0xc277117879af3197fbef92c71e95800aa3b89d9a </br> L: 9a9db8a30a80951ec792effb9731af79781177c2 | ONTd asset hash in Neo chain
+pnUSDT | B: 0x282e3340d5a1cd6a461d5f558d91bc1dbc02a07b </br> L: 7ba002bc1dbc918d555f1d466acda1d540332e28 | nUSDT asset hash in Neo chain
+pnWBTC | B: 0x534dcac35b0dfadc7b2d716a7a73a7067c148b37 </br> L: 378b147c06a7737a6a712d7bdcfa0d5bc3ca4d53 | nWBTC asset hash in Neo chain
 
 ## Note 
 `B` means big-endian, we can search the contract transaction history in corresponding explorer.
