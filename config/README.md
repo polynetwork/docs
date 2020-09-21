@@ -32,8 +32,29 @@ pWING| 0xDb0f18081b505A7DE20B18ac41856BCB4Ba86A1a | pWING
 sUSD| 0x57ab1ec28d129707052df4df418d58a2d46d5f51 | sUSD
 PAX| 0x8e870d67f660d95d5be530380d0ec0bd388289e1 | PAX
 
+## Ethereum: nrenBTC/nsBTC/nTUSD/nUSDC/nwBTC/nwETH/nDAI
+Type | Contract Hash | Desc
+---|---|---
+nrenBTC | 0x7757ffe3ac09bc6430f6896f720e77cf80ec1f74 |   normalized renBTC
+nsBTC	| 0x2dd56dc238d1fc2f9aac3793a287f4e0af1b08b4   |   normalized Synth sBTC
+nTUSD	| 0x886f6F287Bb2eA7DE03830a5FD339EDc107c559f   |   normalized TrueUSD
+nUSDC	| 0x7f0ad0525cb8c17d3f5c06ceb0aea20fa0d2ca0a   |   normalized USD Coin
+nUSDT	| 0x2205d2f559ef91580090011aa4e0ef68ec33da44   |   normalized Tether USD
+nwBTC	| 0xbb44b36e588445d7da61a1e2e426664d03d40888   |   normalized Wrapped BTC
+nwETH	| 0xe179198fd42f5de1a04ffd9a36d6dc428ceb13f7   |   normalized Wrapped Ether
+nDAI	| 0x7245ded8459f59b0a680640535476c11b3cd0ef6   |   normalized Dai Stablecoin
 
-
+## Ethereum: frenBTC/fsBTC/fTUSD/fUSDC/fwBTC/fwETH/fDAI
+Type | Contract Hash | Desc
+---|---|---
+frenBTC	| 0xB0B3442b632175B0b7d9521291c51060722C4e8C |   flamincomed renBTC
+fsBTC	  | 0x681D3261CC6d2A18b59f8B53219b96F06BcEeB69 |   flamincomed Synth sBTC (fsBTC)
+fTUSD	  | 0xa322AEa77769666453377CC697fbE4C6390b9942 |   flamincomed TrueUSD
+fUSDC	  | 0x3f7E3d82bdDc28d3Eb04F0d0A51e9Fc82db581f0 |   flamincomed USD Coin
+fUSDT	  | 0x54bE9254ADf8D5c8867a91E44f44c27f0c88e88A |   flamincomed Tether USD
+fwBTC	  | 0x1a389c381a8242B7acFf0eB989173Cd5d0EFc3e3 |   flamincomed Wrapped BTC 
+fwETH	  | 0x1E9DC5d843731D333544e63B2B2082D21EF78ed3 |   flamincomed Wrapped Ether
+fDAI	  | 0x163D457fA8247f1A9279B9fa8eF513de116e4327 |   flamincomed Dai Stablecoin
 
 
 ## Ontology
@@ -61,19 +82,6 @@ ETHx | B: 0x17c76859c11bc14da5b3e9c88fa695513442c606 </br> L: 06c642345195a68fc8
 ONTx | B: 0x271e1e4616158c7440ffd1d5ca51c0c12c792833 </br> L: 3328792cc1c051cad5d1ff40748c1516461e1e27 | ONT asset hash in Neo chain
 CCMC | B: 0x82a3401fb9a60db42c6fa2ea2b6d62e872d6257f </br> L: 7f25d672e8626d2beaa26f2cb40da6b91f40a382 | Cross Chain Manager Contract
 Lock Proxy | B: 0x82e749792af617d66593ef14eb34331ed58a0fcb </br> L: cb0f8ad51e3334eb14ef9365d617f62a7949e782 | The lock proxy bridge contract hash for asset not implementing the "lock" and "unlock" logic to do cross chain tx
-
-## Ethereum: Normalized renBTC/sBTC/nTUSD/nUSDC/nwBTC/nwETH/nDAI
-## Project: Flamincome
-Type | Contract Hash | Desc
----|---|---
-nrenBTC | 0x7757ffe3ac09bc6430f6896f720e77cf80ec1f74 |   normalized renBTC
-nsBTC	| 0x2dd56dc238d1fc2f9aac3793a287f4e0af1b08b4   |   normalized Synth sBTC
-nTUSD	| 0x886f6F287Bb2eA7DE03830a5FD339EDc107c559f   |   normalized TrueUSD
-nUSDC	| 0x7f0ad0525cb8c17d3f5c06ceb0aea20fa0d2ca0a   |   normalized USD Coin
-nUSDT	| 0x2205d2f559ef91580090011aa4e0ef68ec33da44   |   normalized Tether USD
-nwBTC	| 0xbb44b36e588445d7da61a1e2e426664d03d40888   |   normalized Wrapped BTC
-nwETH	| 0xe179198fd42f5de1a04ffd9a36d6dc428ceb13f7   |   normalized Wrapped Ether
-nDAI	| 0x7245ded8459f59b0a680640535476c11b3cd0ef6   |   normalized Dai Stablecoin
 
 ## Note 
 `B` means big-endian, we can search the contract transaction history in corresponding explorer.
