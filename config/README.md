@@ -44,18 +44,6 @@ nwBTC	| 0xbb44b36e588445d7da61a1e2e426664d03d40888   |   normalized Wrapped BTC
 nwETH	| 0xe179198fd42f5de1a04ffd9a36d6dc428ceb13f7   |   normalized Wrapped Ether
 nDAI	| 0x7245ded8459f59b0a680640535476c11b3cd0ef6   |   normalized Dai Stablecoin
 
-## Ethereum: frenBTC/fsBTC/fTUSD/fUSDC/fwBTC/fwETH/fDAI
-Type | Contract Hash | Desc
----|---|---
-frenBTC	| 0xB0B3442b632175B0b7d9521291c51060722C4e8C |   flamincomed renBTC
-fsBTC	  | 0x681D3261CC6d2A18b59f8B53219b96F06BcEeB69 |   flamincomed Synth sBTC (fsBTC)
-fTUSD	  | 0xa322AEa77769666453377CC697fbE4C6390b9942 |   flamincomed TrueUSD
-fUSDC	  | 0x3f7E3d82bdDc28d3Eb04F0d0A51e9Fc82db581f0 |   flamincomed USD Coin
-fUSDT	  | 0x54bE9254ADf8D5c8867a91E44f44c27f0c88e88A |   flamincomed Tether USD
-fwBTC	  | 0x1a389c381a8242B7acFf0eB989173Cd5d0EFc3e3 |   flamincomed Wrapped BTC 
-fwETH	  | 0x1E9DC5d843731D333544e63B2B2082D21EF78ed3 |   flamincomed Wrapped Ether
-fDAI	  | 0x163D457fA8247f1A9279B9fa8eF513de116e4327 |   flamincomed Dai Stablecoin
-
 
 ## Ontology
 
