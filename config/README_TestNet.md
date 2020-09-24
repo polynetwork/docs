@@ -33,7 +33,7 @@ ECNEO | 0x7E269f2f33A97C64192e9889FAeEC72A6fcdB397 |
 RENBTC | 0x239100e629a9Ca8e0BF45C7892b0fc72d78AA97A |
 pWING | 0xB60e03E6973B1d0b90a763f5B64C48ca7cB8c2d1 |WING on ethereum
 pPAX | 0x825c227B07153eA450a6607E35c2BF70a9B2fe47 |
-sUSD | 0x21718C0FbD10900565fa57C76e1862cd3F6a4d8E |[How to get sUSD](https://developer.synthetix.io/integrations/testnets/)
+sUSD | 0x8ae2a0bfb3315b63ee8e88ac7d3f6b5a68f01cf5 |[How to get sUSD](https://developer.synthetix.io/integrations/testnets/)
 
 ## Ontology
 
@@ -62,7 +62,7 @@ pSUSD | B: 37f4497b6f5f511e73843a0bda1042777666f7ec</br> L:ecf76676774210da0b3a8
 
 Type | Contract Hash | Desc
 ---|---|---
-CNEO | B: 0xc074a05e9dcf0141cbe6b4b3475dd67baf4dcb60 </br> L: 60cb4daf7bd65d47b3b4e6cb4101cf9d5ea074c0 | 
+nNEO | B: 0x17da3881ab2d050fea414c80b3fa8324d756f60e </br> L: 0ef656d72483fab3804c41ea0f052dab8138da17 | 
 CGAS | B: 0x74f2dc36a68fdc4682034178eb2220729231db76 </br> L: 76db3192722022eb7841038246dc8fa636dcf274 |
 ETHx | B: 0xd7b32de37ad906df80805c2419ff5560d20f9cbf </br> L: bf9c0fd26055ff19245c8080df06d97ae32db3d7 | Eth asset hash in Neo chain
 BTCx | B: 0x3ee29d5cc82771e91383f9ba09c6f5c5878f3f24 </br> L: 243f8f87c5f5c609baf98313e97127c85c9de23e | BTC asset hash in Neo chain
