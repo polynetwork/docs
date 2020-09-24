@@ -18,23 +18,4 @@
 
 ## 启动Relayer
 
-1. 下载neo-relayer的可执行文件，解压至特定位置
-2. 更改配置信息，例如：
-
-```json
-{
-  "RelayJsonRpcUrl": "http://138.91.6.125:40336", // 中继链rpc地址
-  "RelayChainID": 0, // 中继链编码
-  "WalletFile": "./wallet.dat", // 中继链钱包
-  "NeoWalletFile": "TBD", // 待定，后续版本可能采用钱包文件以替代钱包wif
-  "NeoWalletWIF": "L3Hab7wL43SbWLnkfnVCp6dT99xzfB4qLZxeR9dFgcWWPirwKyXp", // Neo钱包wif
-  "NeoJsonRpcUrl": "http://47.89.240.111:11332", // Neo链rpc地址
-  "NeoChainID": 4, // Neo链编码
-  "NeoCCMC": "b0d4f20da68a6007d4fb7eac374b5566a5b0e229", // Neo链的跨链管理合约
-  "ScanInterval": 2, // 扫描中继链的时间间隔，单位为秒
-  "GasPrice": 0,
-  "GasLimit": 200000
-}
-```
-
-3. 输入./main --loglevel 0 --cliconfig “path” 执行Relayer可执行文件以运行neo-relayer
+更多关于如何配置、部署和启动一个neo-relayer，参考[neo-relayer]([./How_to_become_neo_relayer_en.md](https://github.com/polynetwork/neo-relayer/blob/master/README.md))。
