@@ -205,5 +205,5 @@ After the ERC20 contract is deployed the administrator needs to invoke the `setM
 
 ## License
 
-The Ontology library is licensed under the GNU Lesser General Public License v3.0, read the LICENSE file in the root directory of the project for details.
+The Poly Network library is licensed under the GNU Lesser General Public License v3.0, read the LICENSE file in the root directory of the project for details.
 

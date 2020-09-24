@@ -81,4 +81,4 @@ The relayer can also be run in the background or run using the shell script (How
 
 ## License
 
-The Ontology library is licensed under the GNU Lesser General Public License v3.0. Please refer to the LICENSE file in the root directory of the project for details.
+The Poly Network library is licensed under the GNU Lesser General Public License v3.0. Please refer to the LICENSE file in the root directory of the project for details.

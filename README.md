@@ -29,6 +29,8 @@ Poly Network is based on the side-chain/relay mode and adopts a two-layer archit
 * [Ethereum Documentation](eth/README.md)
 * [NEO Documentation](neo/README.md)
 * [Ontology Documentation](ont/README.md)
+* [Cosmos Documentation](cosmos/README.md)
+* [Chain Configuration Info](config/README.md)
 
 ## Contributions
 
