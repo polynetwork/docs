@@ -39,13 +39,14 @@ pNEO| 0x381225768DD2bd60D70482B51109D0DEFeE92503 | pNEO
 Type | Contract Hash | Desc
 ---|---|---
 nrenBTC | 0x7757ffe3ac09bc6430f6896f720e77cf80ec1f74 |   normalized renBTC
-nsBTC	| 0x2dd56dc238d1fc2f9aac3793a287f4e0af1b08b4   |   normalized Synth sBTC
-nTUSD	| 0x886f6F287Bb2eA7DE03830a5FD339EDc107c559f   |   normalized TrueUSD
-nUSDC	| 0x7f0ad0525cb8c17d3f5c06ceb0aea20fa0d2ca0a   |   normalized USD Coin
-nUSDT	| 0x2205d2f559ef91580090011aa4e0ef68ec33da44   |   normalized Tether USD
-nwBTC	| 0xbb44b36e588445d7da61a1e2e426664d03d40888   |   normalized Wrapped BTC
-nwETH	| 0xe179198fd42f5de1a04ffd9a36d6dc428ceb13f7   |   normalized Wrapped Ether
-nDAI	| 0x7245ded8459f59b0a680640535476c11b3cd0ef6   |   normalized Dai Stablecoin
+nsBTC	  | 0x2dd56dc238d1fc2f9aac3793a287f4e0af1b08b4   |   normalized Synth sBTC
+nTUSD 	| 0x886f6F287Bb2eA7DE03830a5FD339EDc107c559f   |   normalized TrueUSD
+nUSDC	  | 0x7f0ad0525cb8c17d3f5c06ceb0aea20fa0d2ca0a   |   normalized USD Coin
+nUSDT	  | 0x2205d2f559ef91580090011aa4e0ef68ec33da44   |   normalized Tether USD
+nwBTC	  | 0xbb44b36e588445d7da61a1e2e426664d03d40888   |   normalized Wrapped BTC
+nwETH	  | 0xe179198fd42f5de1a04ffd9a36d6dc428ceb13f7   |   normalized Wrapped Ether
+nDAI	  | 0x7245ded8459f59b0a680640535476c11b3cd0ef6   |   normalized Dai Stablecoin
+nUNI-V2 | 0x6c5fa7a3c2cd98a689b1305bd38b56120fe15744   |   normalized Uniswap V2
 
 
 ## Ontology
