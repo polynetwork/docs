@@ -62,14 +62,14 @@ pSUSD | B: 37f4497b6f5f511e73843a0bda1042777666f7ec</br> L:ecf76676774210da0b3a8
 
 Type | Contract Hash | Desc
 ---|---|---
-CNEO | B: 0xc074a05e9dcf0141cbe6b4b3475dd67baf4dcb60 </br> L: 60cb4daf7bd65d47b3b4e6cb4101cf9d5ea074c0 | 
-CGAS | B: 0x74f2dc36a68fdc4682034178eb2220729231db76 </br> L: 76db3192722022eb7841038246dc8fa636dcf274 |
-ETHx | B: 0xd7b32de37ad906df80805c2419ff5560d20f9cbf </br> L: bf9c0fd26055ff19245c8080df06d97ae32db3d7 | Eth asset hash in Neo chain
-BTCx | B: 0x3ee29d5cc82771e91383f9ba09c6f5c5878f3f24 </br> L: 243f8f87c5f5c609baf98313e97127c85c9de23e | BTC asset hash in Neo chain
-ONTx | B: 0x5a9222225f1bdb135123b74354c7248200c440aa </br> L: aa40c4008224c75443b7235113db1b5f2222925a | ONT asset hash in Neo chain
-ATOMx | B: 0xb25b51d684f7945f7aab43496cb0e87138abdb35 </br> L: 35dbab3871e8b06c4943ab7a5f94f784d6515bb2 | ATOM asset hash in Neo chain
-CCMC | B: 0xe1695b1314a1331e3935481620417ed835669407 </br> L: 07946635d87e4120164835391e33a114135b69e1 | Cross Chain Manager Contract
-Lock Proxy | B: 0x229e8fe772d5f0cbb408d58b593e42a1d1dfa3a9 </br> L: a9a3dfd1a1423e598bd508b4cbf0d572e78f9e22 | The lock proxy bridge contract hash for asset not implementing the "lock" and "unlock" logic to do cross chain tx
+Wrapper | 0xc23143755be681f949f4c5fcfa5b4f8646dd34b5	| b534dd46864f5bfafcc5f449f981e65b754331c2	| 
+Nep5Proxy	| 0xedd2862dceb90b945210372d229f453f2b705f4f	| 4f5f702b3f459f222d371052940bb9ce2d86d2ed	| The lock proxy bridge contract hash for asset not implementing the "lock" and "unlock" logic to do cross chain tx
+CCMC	| 0xe1695b1314a1331e3935481620417ed835669407	| 07946635d87e4120164835391e33a114135b69e1	| Cross Chain Manager Contract
+pnWETH	| 0x23535b6fd46b8f867ed010bab4c2bd8ef0d0c64f	| 4fc6d0f08ebdc2b4ba10d07e868f6bd46f5b5323	| 
+nNEO	| 0x17da3881ab2d050fea414c80b3fa8324d756f60e	| 0ef656d72483fab3804c41ea0f052dab8138da17	| 
+pONTd	| 0x658cabf9c1f71ba0fa64098a7c17e52b94046ece	| ce6e04942be5177c8a0964faa01bf7c1f9ab8c65	| 
+pnUSDT	| 0xb8f78d43ea9fe006c85a26b9aff67bcf69dd4fe1	| e14fdd69cf7bf6afb9265ac806e09fea438df7b8	| 
+pnWBTC	| 0x69c57a716567a0f6910a0b3c1d4508fa163eb927	| 27b93e16fa08451d3c0b0a91f6a06765717ac569	| 
 
 
 ## Note 
