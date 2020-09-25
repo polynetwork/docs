@@ -81,6 +81,7 @@ nNEO | B: 0xf46719e2d16bf50cddcef9d4bbfece901f73cbb6 </br> L: b6cb731f90cefebbd4
 pONT | B: 0xc277117879af3197fbef92c71e95800aa3b89d9a </br> L: 9a9db8a30a80951ec792effb9731af79781177c2 | ONTd asset hash in Neo chain
 pnUSDT | B: 0x282e3340d5a1cd6a461d5f558d91bc1dbc02a07b </br> L: 7ba002bc1dbc918d555f1d466acda1d540332e28 | nUSDT asset hash in Neo chain
 pnWBTC | B: 0x534dcac35b0dfadc7b2d716a7a73a7067c148b37 </br> L: 378b147c06a7737a6a712d7bdcfa0d5bc3ca4d53 | nWBTC asset hash in Neo chain
+pnUNI_V2_ETH_WBTC | B: 0xc534d65c85c074887f58ed1f3bad7dfd739a525e </br> L: 5e529a73fd7dad3b1fed587f8874c0855cd634c5 | nUNI_V2_ETH_WBTC asset hash in Neo chain
 
 ## Note 
 `B` means big-endian, we can search the contract transaction history in corresponding explorer.
