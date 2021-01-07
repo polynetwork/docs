@@ -37,6 +37,24 @@ sUSD | 0x21718C0FbD10900565fa57C76e1862cd3F6a4d8E |[How to get sUSD](https://dev
 OKB | 0x776C8DB09367615BC741Be6e13Dec8EAbD2bD8bd |
 UNI | 0x1269d9940a2bfc5aC13c759E7ef1E35FEc7278f6 |
 
+
+## Bsc
+
+Type | Contract Hash | Desc
+---|---|---
+CCMP | 0x441C035446c947a97bD36b425B67907244576990 | Cross Chain Manager Proxy contract hash 
+ECCD | 0xE815E5B52A659d78c91B747f7A3b358cc4F04794 | Cross Chain Data contract hash
+ECCM | 0xdB8e0cB4b48981BAf26c4844f084Fbb7303151ef   | Cross Chain Manager contract hash
+Lock Proxy | 0x097Ae585BfEf78DDC8E266ABCb840dAF7265130c | The lock proxy bridge contract hash for asset not implementing the "lock" and "unlock" logic to do cross chain tx
+Bnb | 0x0000000000000000000000000000000000000000 | The asset hash that we treat as the Bnb asset
+USDT | 0x23F5075740c2C99C569FfD0768c383A92d1a4aD7 | USD Tether 
+USDC | 0xeE8410B64aAed811d84c313b72E040Cb09840b80 | USDC 
+WBTC | 0xA3cE15f11D4427b6bad5630036f368a98e923E95 | WBTC 
+DAI | 0xe5750F0EE3DFD2e6a3Aca35ddC0E904188Fd571e | DAI 
+WING | 0x0a7BF54D2684885d731Dc63917A3178A2a1a8d4A | WING
+ONTd | 0xAd21Ee6507E8Ee05E7A239163031d1853Bb8869f | ONTd
+
+
 ## Ontology
 
 #### Please donot send from or to Ontology network during upgrade of Ontology testnet
