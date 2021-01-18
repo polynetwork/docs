@@ -39,7 +39,6 @@ UNI | 0x1269d9940a2bfc5aC13c759E7ef1E35FEc7278f6 |
 Bnb | 0x09c6a1B0B32a8B2c327532518C68F9B0C54255b8 |
 
 
-
 ## Bsc
 
 Type | Contract Hash | Desc
@@ -56,6 +55,16 @@ DAI | 0xe5750F0EE3DFD2e6a3Aca35ddC0E904188Fd571e | DAI
 WING | 0x0a7BF54D2684885d731Dc63917A3178A2a1a8d4A | WING
 ONTd | 0xAd21Ee6507E8Ee05E7A239163031d1853Bb8869f | ONTd
 
+## Heco
+Type | Contract Hash | Desc
+---|---|---
+CCMP | 0xc5757b5d22984E534004cC7Fb1D59eD14EC510a5 | Cross Chain Manager Proxy contract hash 
+ECCD | 0x709D63f3d1a46B89cE4F6a61C8fb16aB29fD26F8 | Cross Chain Data contract hash
+ECCM | 0xD9A3d265a1127051F620e700B5a461af4991EaAE   | Cross Chain Manager contract hash
+Lock Proxy | 0x4a76E52600C6285029c8f7c52183cf86282cA5b8 | The lock proxy bridge contract hash for asset not implementing the "lock" and "unlock" logic to do cross chain tx
+HT | 0x0000000000000000000000000000000000000000
+HRC20 | 0xFAddf0cfb08F92779560db57BE6b2C7303aaD266
+pNEO | 
 
 ## Ontology
 
@@ -101,7 +110,8 @@ pWING |	0x9612f09852522be3cf6e1a4db8b5a496a9036e40 |	406e03a996a4b5b84d1a6ecfe32
 pWBTC |	0x039d8bdb37b7f42230bf5c6ea1ff8b348aa12c8b |	8b2ca18a348bffa16e5cbf3022f4b737db8b9d03 |
 pDAI |	0xe26656daaa0c6a8ee6c4929acdb25ebf3b73011b |	1b01733bbf5eb2cd9a92c4e68e6a0caada5666e2 |
 pUSDC |	0x63d3999d6d9b04d35c7c8aa9a450c9bb3b3db838 |	38b83d3bbbc950a4a98a7c5cd3049b6d9d99d363 |
-
+pHT | 0x843e9f7a4ba7e062a53d7bbbe85cb35421704616 | 1646702154b35ce8bb7b3da562e0a74b7a9f3e84
+pHrc20 | 0xbb01ac51a4c49bd28676274726497ab27ae8f66c | 6cf6e87ab27a492647277686d29bc4a451ac01bb
 
 ## Note 
 `B` means big-endian, we can search the contract transaction history in corresponding explorer.
@@ -130,6 +140,9 @@ Type | Router Number | ChainId
 Bitcoin | 1 | 1
 Ethereum | 2 | 2
 Ontology | 3 | 3
-NEO | 4 | 4
-Cosmos-gaia | 5 | 5
+NEO | 4 | 5
 Switcheo | 5 | release soon
+BSC | 6 | 79
+Heco | 7 | 7
+Palette | 8 | 106
+
