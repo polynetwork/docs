@@ -98,6 +98,7 @@ CCMP | 0xABD7f7B89c5fD5D0AEf06165f8173b1b83d7D5c9 | Cross Chain Manager Proxy co
 ECCD | 0x11e2A718d46EBe97645b87F2363AFE1BF28c2672 | BSC Cross Chain Data contract hash
 ECCM | 0x7ceA671DABFBa880aF6723bDdd6B9f4caA15C87B | BSC Cross Chain Manager contract hash
 Lock Proxy| 0x2f7ac9436ba4B548f9582af91CA1Ef02cd2F1f03 | BSC Asset Proxy contract hash
+Poly Wrapper | 0xE3D0FB6E3cB5DA61EB18b06D035052441009d1E6 | lock entrance for auto cross chain tx with fee 
 pNEO | 0xb119b3b8e5e6eeffbe754b20ee5b8a42809931fb | NEO mapping asset in BSC
 pETH | 0xb9478391eec218defa96f7b9a7938cf44e7a2fd5 | ETH mapping asset in BSC
 pUSDT|  0x48389753b64C9e581975457332E60dC49325A653 | USDT mapping asset in BSC
@@ -113,6 +114,7 @@ CCMP | 0xABD7f7B89c5fD5D0AEf06165f8173b1b83d7D5c9 | Cross Chain Manager Proxy co
 ECCD | 0x11e2A718d46EBe97645b87F2363AFE1BF28c2672 | Heco Cross Chain Data contract hash
 ECCM | 0x7ceA671DABFBa880aF6723bDdd6B9f4caA15C87B | Heco Cross Chain Manager contract hash
 Lock Proxy| 0x020c15e7d08A8Ec7D35bCf3AC3CCbF0BBf2704e6 | Heco Asset Proxy contract hash
+Poly Wrapper | 0x4fE451186c0D69205ACc1fA00FD75fc6d71e47eE | lock entrance for auto cross chain tx with fee 
 pNEO | 0x2f7ac9436ba4B548f9582af91CA1Ef02cd2F1f03 | NEO mapping asset in Heco
 pETH | 0x28FF66a1B95d7CAcf8eDED2e658f768F44841212 | ETH mapping asset in Heco
 pDAI | 0x7E418a9926c8D1cbd09CC93E8051cC3BbdfE3854 | DAI mapping asset in Heco
