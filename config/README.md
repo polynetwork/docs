@@ -53,6 +53,7 @@ nwBTC	  | 0xbb44b36e588445d7da61a1e2e426664d03d40888   |   normalized Wrapped BT
 nwETH	  | 0xe179198fd42f5de1a04ffd9a36d6dc428ceb13f7   |   normalized Wrapped Ether
 nDAI	  | 0x7245ded8459f59b0a680640535476c11b3cd0ef6   |   normalized Dai Stablecoin
 nUNI-V2 | 0x6c5fa7a3c2cd98a689b1305bd38b56120fe15744   |   normalized Uniswap V2
+xWETH  | 0x46b2E0224efb03D43eba88AB5A1995480e6A76b6  | xWETH
 
 
 ## Ontology
@@ -92,6 +93,7 @@ pnUSDT | B: 0x282e3340d5a1cd6a461d5f558d91bc1dbc02a07b </br> L: 7ba002bc1dbc918d
 pnWBTC | B: 0x534dcac35b0dfadc7b2d716a7a73a7067c148b37 </br> L: 378b147c06a7737a6a712d7bdcfa0d5bc3ca4d53 | nWBTC asset hash in Neo chain
 pnUNI_V2_ETH_WBTC | B: 0xc534d65c85c074887f58ed1f3bad7dfd739a525e </br> L: 5e529a73fd7dad3b1fed587f8874c0855cd634c5 | nUNI_V2_ETH_WBTC asset hash in Neo chain
 FLM | B: 0x4d9eab13620fe3569ba3b0e56e2877739e4145e3 </br> L: e345419e7377286ee5b0a39b56e30f6213ab9e4d | Flamingo token
+pxWETH | B: 0xb75022ea4846a10b31e3b14e1dec15672638ed0f </br> L: 0fed38266715ec1d4eb1e3310ba14648ea2250b7 | pxWETH
 
 ## Binance Smart Chain
 Type | Contract Hash | Desc
