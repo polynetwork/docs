@@ -130,6 +130,8 @@ pUSDC |	0x63d3999d6d9b04d35c7c8aa9a450c9bb3b3db838 |	38b83d3bbbc950a4a98a7c5cd30
 pHT | 0x843e9f7a4ba7e062a53d7bbbe85cb35421704616 | 1646702154b35ce8bb7b3da562e0a74b7a9f3e84 | 
 pHrc20 | 0xbb01ac51a4c49bd28676274726497ab27ae8f66c | 6cf6e87ab27a492647277686d29bc4a451ac01bb | 
 pxWETH | 0xebda3300da6b657641fe627e2a2ef3a893f9ceb8 | b8cef993a8f32e2a7e62fe4176656bda0033daeb | 
+pxWBTC | 0x3b772e350b8e1e48c95406c5d8051e2c3de0076a | 6a07e03d2c1e05d8c50654c9481e8e0b352e773b | 
+pxUSDT | 0xf6e02d506929c3f47be47bf60997a96a41c7b282 | 82b2c7416aa99709f67be47bf4c32969502de0f6 | 
 
 ## Note 
 `B` means big-endian, we can search the contract transaction history in corresponding explorer.
