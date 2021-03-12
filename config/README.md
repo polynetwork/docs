@@ -54,8 +54,8 @@ nwETH	  | 0xe179198fd42f5de1a04ffd9a36d6dc428ceb13f7   |   normalized Wrapped Et
 nDAI	  | 0x7245ded8459f59b0a680640535476c11b3cd0ef6   |   normalized Dai Stablecoin
 nUNI-V2 | 0x6c5fa7a3c2cd98a689b1305bd38b56120fe15744   |   normalized Uniswap V2
 xWETH  | 0x46b2E0224efb03D43eba88AB5A1995480e6A76b6  | xWETH
-xWBTC  | 0xa5222e278417b151982096cc99aa36c3aeaa8184  | xWBTC
-xUSDT  | 0x73F72b2CD64df6f443879e0dB26D3078eC698C55  | xUSDT
+xWBTC  | 0xebd0e8988ac25a793dc27368f96a5a72e34efcd7  | xWBTC
+xUSDT  | 0xa93727e8661d4f82cfd50f7d8fd3f38ec8493b84  | xUSDT
 
 
 ## Ontology
