@@ -95,6 +95,7 @@ pSUSD | 0x83e906D9fa217D4210DC339133812054eB8d5629 |
 
 Type | Contract Hash | Desc
 ---|---|---
+Wrapper | B:a5c101afa9e04e9dd2c912983795005a49e02efa L: fa2ee0495a0095379812c9d29d4ee0a9af01c1a5
 Lock Proxy | B: 33c439c502cb4b6ac5a1e8057a65fe1fa7c300e2 </br> L: e200c3a71ffe657a05e8a1c56a4bcb02c539c433 | The bridge contract hash for asset not implementing the "lock" and "unlock" logic to do cross chain tx
 OERC20 | B: e930755b130dccb25dc3cfee2b2e30d9370c1a75  </br> L: 751a0c37d9302e2beecfc35db2cc0d135b7530e9  | ERC20 template contract hash in Ontology chain
 OEP4 | B: 969850e009b5e2a061694f3479ec8e44bc68bcd3 </br> L: d3bc68bc448eec79344f6961a0e2b509e0509896 | OEP4 template contract hash in Ontology chain
