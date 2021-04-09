@@ -18,6 +18,9 @@ CCMP | 0xb600c8a2e8852832B75DB9Da1A3A1c173eAb28d8 | Cross Chain Manager Proxy co
 ECCD | 0xA38366d552672556CE82426Da5031E2Ae0598dcD | Ethereum Cross Chain Data contract hash
 ECCM | 0x726532586C50ec9f4080B71f906a3d9779bbd64F   | Ethereum Cross Chain Manager contract hash
 Lock Proxy | 0xD8aE73e06552E270340b63A8bcAbf9277a1aac99 | The lock proxy bridge contract hash for asset not implementing the "lock" and "unlock" logic to do cross chain tx
+NFT Lock Proxy | 0x9bEF1AE7304D3d2F344ea00e796ADa18cE1beb03 | The NFT lockc proxy contract hash
+NFT Wrapper | 0x88aD4fD94a05602E595101a3e3171f91289C8f6b | The NFT Wrapper contract hash
+NFT cat1 | 0xa85c9FC8F2c9060d674E0CA97F703a0A30619305 | The NFT collection of `digitalCat1` contract hash
 ERC20 | 0x276788aF4a803781267c84692416311DE1F761f9 | ERC20 template contract hash in Ethereum chain
 EOEP4 | 0x3105A14F7956D33a51F12eF3AE50A3f1eF161Dff | OEP4x template contract hash in Ethereum chain
 EONG | 0x42d9feF0Cbd9c3000CECe9764d99A4a6fE9E1B34 | ONGx contract hash in Ethereum chain
@@ -58,6 +61,9 @@ CCMP | 0x441C035446c947a97bD36b425B67907244576990 | Cross Chain Manager Proxy co
 ECCD | 0xE815E5B52A659d78c91B747f7A3b358cc4F04794 | Cross Chain Data contract hash
 ECCM | 0xdB8e0cB4b48981BAf26c4844f084Fbb7303151ef   | Cross Chain Manager contract hash
 Lock Proxy | 0x097Ae585BfEf78DDC8E266ABCb840dAF7265130c | The lock proxy bridge contract hash for asset not implementing the "lock" and "unlock" logic to do cross chain tx
+NFT Lock Proxy | 0x9bEF1AE7304D3d2F344ea00e796ADa18cE1beb03 | The NFT lock proxy contract hash
+NFT Wrap | 0xB5e86d80287835115a81562073b1Cff3fCe564E9 | The NFT Wrapper contract hash
+NFT cat1 | 0x455B51D882571E244d03668f1a458ca74E70d196 | The NFT collection of `digitalCat1` contract hash
 Bnb | 0x0000000000000000000000000000000000000000 | The asset hash that we treat as the Bnb asset
 USDT | 0x23F5075740c2C99C569FfD0768c383A92d1a4aD7 | USD Tether 
 USDC | 0xeE8410B64aAed811d84c313b72E040Cb09840b80 | USDC 
