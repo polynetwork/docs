@@ -87,6 +87,15 @@ REVO | 0x155040625D7ae3e9caDA9a73E3E44f76D3Ed1409
 Essentia | 0xcdA43a8EF603aC31DA6E104b481146374C53149C
 
 
+## OK
+
+Type | Contract Hash | Desc
+---|---|---
+CCMP | 0x38917884b397447227fb45cbA0342F1bFf7A3470 | Cross Chain Manager Proxy contract hash 
+ECCD | 0xd1Acc7bc3BDA9a63eEF89357a6f4c705ee874f44 | Cross Chain Data contract hash
+ECCM | 0x2A4cF474Aef33F0046434E4916Ac6b2fef4e5B78   | Cross Chain Manager contract hash
+Lock Proxy | 0x74cE7D56cd1b5AEe9A3345A490b5Ed768134C7D4 | The lock proxy bridge contract hash for asset not implementing the "lock" and "unlock" logic to do cross chain tx
+
 ## Heco
 Type | Contract Hash | Desc
 ---|---|---
@@ -195,4 +204,4 @@ Switcheo | 5 | release soon
 BSC | 6 | 79
 Heco | 7 | 7
 Palette | 8 | 106
-
+OK | 12 | 200
