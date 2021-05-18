@@ -85,6 +85,7 @@ nUNI-V2 | 0x6c5fa7a3c2cd98a689b1305bd38b56120fe15744   |   normalized Uniswap V2
 xWETH  | 0x46b2E0224efb03D43eba88AB5A1995480e6A76b6  | xWETH
 xWBTC  | 0xebd0e8988ac25a793dc27368f96a5a72e34efcd7  | xWBTC
 xUSDT  | 0xa93727e8661d4f82cfd50f7d8fd3f38ec8493b84  | xUSDT
+mBTC    | 0xcfc013b416be0bd4b3bede35659423b796f8dcf0 | mBTC
 
 
 ## Ontology
@@ -129,7 +130,7 @@ pxWETH | B: 0xb75022ea4846a10b31e3b14e1dec15672638ed0f </br> L: 0fed38266715ec1d
 pxWBTC | B: 0x0f6b073b80e6384d691b7cf1cb8649582fbd7d10 </br> L: 107dbd2f584986cbf17c1b694d38e6803b076b0f | pxWBTC
 pxUSDT | B: 0x962c16f9b8d031d8bf818f8d5e6d229f1d032d35 </br> L: 352d031d9f226d5e8d8f81bfd831d0b8f9162c96 | pxUSDT
 SWTH | B: 0x3e09e602eeeb401a2fec8e8ea137d59aae54a139 </br> L: 39a154ae9ad537a18e8eec2f1a40ebee02e6093e | SWTH
-
+pMBTC | B: 0xe4848b7c552afcc16ea1d4eee0f33880a0364cb8 </br> L: b84c36a08038f3e0eed4a16ec1fc2a557c8b84e4 | pMBTC
 
 ## Binance Smart Chain
 Type | Contract Hash | Desc
