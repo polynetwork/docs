@@ -23,6 +23,7 @@ ECCD | 0xcf2afe102057ba5c16f899271045a0a37fcb10f2 | Ethereum Cross Chain Data co
 ECCM | 0x838bf9e95cb12dd76a54c9f9d2e3082eaf928270 | Ethereum Cross Chain Manager contract hash
 Lock Proxy| 0x250e76987d838a75310c34bf422ea9f1AC4Cc906 | Ethereum Asset Proxy contract hash
 Poly Wrapper | 0x2aA63cd0b28FB4C31fA8e4E95Ec11815Be07b9Ac | lock entrance for auto cross chain tx with fee 
+Wrapper 2.0 | 0xd380450e9e373bDC389951C54616edb2EE653524 | wrapper_v2 that take native asset as fee
 Swapper | 0x02e20ca05e38cbdf1a6235a7acdd34efc0434caa | curve entrance for auto cross chain tx with fee 
 NFT Lock Proxy | 0x2cdfc90250EF967036838DA601099656e74bCfc5 | The NFT lockc proxy contract hash
 NFT Wrapper | 0xe5204d62361A353C665668C858Ea213070CA159c | The NFT Wrapper contract hash
@@ -144,6 +145,7 @@ ECCD | 0x11e2A718d46EBe97645b87F2363AFE1BF28c2672 | BSC Cross Chain Data contrac
 ECCM | 0x7ceA671DABFBa880aF6723bDdd6B9f4caA15C87B | BSC Cross Chain Manager contract hash
 Lock Proxy| 0x2f7ac9436ba4B548f9582af91CA1Ef02cd2F1f03 | BSC Asset Proxy contract hash
 Poly Wrapper | 0xE3D0FB6E3cB5DA61EB18b06D035052441009d1E6 | lock entrance for auto cross chain tx with fee 
+Wrapper 2.0 | 0x4b0CFdb5e1Ca898a225F9E14AfF9e4eF178a10d2 | wrapper_v2 that take native asset as fee
 Swapper | 0x3ec481143d688442E581aD7116Bf1ECC76669cfa | Curve entrance for auto cross chain tx with fee 
 NFT Lock Proxy | 0x2cdfc90250EF967036838DA601099656e74bCfc5 | The NFT lockc proxy contract hash
 NFT Wrapper | 0xe2bD9dD8FAF5C4C2087Ab82eC7E63F619CcAa152 | The NFT Wrapper contract hash
@@ -194,6 +196,7 @@ ECCD | 0x11e2A718d46EBe97645b87F2363AFE1BF28c2672 | Heco Cross Chain Data contra
 ECCM | 0x7ceA671DABFBa880aF6723bDdd6B9f4caA15C87B | Heco Cross Chain Manager contract hash
 Lock Proxy| 0x020c15e7d08A8Ec7D35bCf3AC3CCbF0BBf2704e6 | Heco Asset Proxy contract hash
 Poly Wrapper | 0x4fE451186c0D69205ACc1fA00FD75fc6d71e47eE | lock entrance for auto cross chain tx with fee 
+Wrapper 2.0 | 0x1B0C55be400e2a7D924032B257Fbc75Bbfd256E7 | wrapper_v2 that take native asset as fee
 Swapper | 0x70f4d1176f9276ab4B31658f58F7473858F2b550 | Curve entrance for auto cross chain tx with fee 
 NFT Lock Proxy | 0x2cdfc90250EF967036838DA601099656e74bCfc5 | The NFT lockc proxy contract hash
 NFT Wrapper | 0xe2bD9dD8FAF5C4C2087Ab82eC7E63F619CcAa152 | The NFT Wrapper contract hash
@@ -248,6 +251,7 @@ ECCD | 0xdb3A0149f3155cC1B6890FE382d309dB4b322630 | OKEx Cross Chain Data contra
 ECCM | 0xF35844C21A0Ca574D0e52697Bbd5ceDda5798A07 | OKEx Cross Chain Manager contract hash
 Lock Proxy| 0x9a3658864Aa2Ccc63FA61eAAD5e4f65fA490cA7D | OKEx Asset Proxy contract hash
 Poly Wrapper | 0x11e2A718d46EBe97645b87F2363AFE1BF28c2672 | lock entrance for auto cross chain tx with fee 
+Wrapper 2.0 | 0xbd4a08577476A521C41a21EF3f00b045b74175d5 | wrapper_v2 that take native asset as fee
 Wing | 0x7a47ab305b8a2a3f4020d13fa9ef73cddcc0e7d4 | Wing mapping asset in OKEx
 Flux | 0xd0C6821aba4FCC65e8f1542589e64BAe9dE11228 | Flux mapping asset in OKEx
 mBTM | 0xB46985584980c17860CE396667bc74d94Bad4eBF | mBTM mapping asset in OKEx
