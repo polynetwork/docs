@@ -20,7 +20,7 @@ ECCM | 0x726532586C50ec9f4080B71f906a3d9779bbd64F   | Ethereum Cross Chain Manag
 Lock Proxy | 0xD8aE73e06552E270340b63A8bcAbf9277a1aac99 | The lock proxy bridge contract hash for asset not implementing the "lock" and "unlock" logic to do cross chain tx
 NFT Lock Proxy | 0x9bEF1AE7304D3d2F344ea00e796ADa18cE1beb03 | The NFT lockc proxy contract hash
 NFT Wrapper | 0x940300dc3Fc26e3A330a300be766184C0b5Fe019 | The NFT Wrapper contract hash
-NFT Query | 0xD2B67aeeA3A5e85AEe9F77E98db094d1E30A00Ed | The NFT profile query contract hash
+NFT Query | 0x500674D603331C43ed2288834BAb284BF65fc076 | The NFT profile query contract hash
 NFT SEASCAPE | 0x3680fb34F55030326659cd9AaEc522B6E355bdB6 | The seascape NFT contracct hash
 NFT cat1 | 0xa85c9FC8F2c9060d674E0CA97F703a0A30619305 | The NFT collection of `digitalCat1` contract hash
 ERC20 | 0x276788aF4a803781267c84692416311DE1F761f9 | ERC20 template contract hash in Ethereum chain
@@ -65,7 +65,7 @@ ECCM | 0xdB8e0cB4b48981BAf26c4844f084Fbb7303151ef   | Cross Chain Manager contra
 Lock Proxy | 0x097Ae585BfEf78DDC8E266ABCb840dAF7265130c | The lock proxy bridge contract hash for asset not implementing the "lock" and "unlock" logic to do cross chain tx
 NFT Lock Proxy | 0x9bEF1AE7304D3d2F344ea00e796ADa18cE1beb03 | The NFT lockc proxy contract hash
 NFT Wrapper | 0x61E289D43C1FEA7598786557A2F309979ad144D3 | The NFT Wrapper contract hash
-NFT Query | 0x274DD6F0bA27C167821fD340cb3a3B2Ab3b5827D | The NFT profile query contract hash
+NFT Query | 0xAB3e1F13127bE931A71Fdc8940bd31506EFC6A70 | The NFT profile query contract hash
 NFT SEASCAPE | 0x66638F4970C2ae63773946906922c07a583b6069 | The seascape NFT contracct hash
 NFT cat1 | 0x455B51D882571E244d03668f1a458ca74E70d196 | The NFT collection of `digitalCat1` contract hash
 Bnb | 0x0000000000000000000000000000000000000000 | The asset hash that we treat as the Bnb asset
@@ -96,7 +96,7 @@ ECCM | 0xD9A3d265a1127051F620e700B5a461af4991EaAE   | Cross Chain Manager contra
 Lock Proxy | 0x4a76E52600C6285029c8f7c52183cf86282cA5b8 | The lock proxy bridge contract hash for asset not implementing the "lock" and "unlock" logic to do cross chain tx
 NFT Lock Proxy | 0x25BB8E9C0Cc03B30d09769735208a47d389Ff36c | The NFT lockc proxy contract hash
 NFT Wrapper | 0xbaBaAF5CF7f63437755aAAFE7a4106463c5cD540 | The NFT Wrapper contract hash
-NFT Query | 0xD54a267B2c983d883D39248Dd7002dc7405559E0 | The NFT profile query contract hash
+NFT Query | 0xE1488842b15E0f084b254588f46e4C570065d6A0 | The NFT profile query contract hash
 NFT SEASCAPE | 0xF9Dd424e64E9264632a564FBDcC87Ba8eA40B5Ba | The seascape NFT contracct hash
 NFT cat1 | 0x0C3C33dA088ABeeE376418d3E384528c5AaDBA11 | The NFT collection of `digitalCat1` contract hash
 HT | 0x0000000000000000000000000000000000000000 | Native Huobi token on huobi eco chain
