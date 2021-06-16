@@ -273,6 +273,9 @@ Type | Contract Hash | Desc
 USDT    | 0x061a87Aac7695b9cf9482043175fd3bE3374AB66 | USDT mapping asset in Curve
 BUSD    | 0xBFC0457548BB90D54123a71a7310BaDa8f4662c0 | BUSD mapping asset in Curve
 HUSD    | 0x0926B2DB9D053E0022419093CCd57b92301fB736 | HUSD mapping asset in Curve
+WETH    | 0x83f28703A5761Fe96e4c68Ea5861519f59928DDA | Eth WETH mapping asset in Curve
+BETH    | 0xdCb4775d6F7AA96B2E850b9ee6674FC6A47b85F6 | Bsc ETH mapping asset in Curve
+HETH    | 0xF554231385f15C89A5A5Eb3f96C1A9dfaCA9678d | Heco ETH mapping asset in Curve
 
 
 ## OKEx
