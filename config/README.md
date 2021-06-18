@@ -24,7 +24,7 @@ ECCM | 0x838bf9e95cb12dd76a54c9f9d2e3082eaf928270 | Ethereum Cross Chain Manager
 Lock Proxy| 0x250e76987d838a75310c34bf422ea9f1AC4Cc906 | Ethereum Asset Proxy contract hash
 Poly Wrapper | 0x2aA63cd0b28FB4C31fA8e4E95Ec11815Be07b9Ac | lock entrance for auto cross chain tx with fee 
 Wrapper 2.0 | 0xd380450e9e373bDC389951C54616edb2EE653524 | wrapper_v2 that take native asset as fee
-Swapper | 0x02e20ca05E38cBdf1a6235a7AcDD34EFc0434CaA | curve entrance for auto cross chain tx with fee 
+Swapper | 0xaf83ce8d461e8834de03a3803c968615013c6b3d | curve entrance for auto cross chain tx with fee 
 NFT Lock Proxy | 0x2cdfc90250EF967036838DA601099656e74bCfc5 | The NFT lockc proxy contract hash
 NFT Wrapper | 0xe5204d62361A353C665668C858Ea213070CA159c | The NFT Wrapper contract hash
 NFT Query | 0xB2265A122814dA516318F727183a5D8FeCA8BaCE | The NFT profile query contract hash
@@ -161,7 +161,7 @@ ECCM | 0x7ceA671DABFBa880aF6723bDdd6B9f4caA15C87B | BSC Cross Chain Manager cont
 Lock Proxy| 0x2f7ac9436ba4B548f9582af91CA1Ef02cd2F1f03 | BSC Asset Proxy contract hash
 Poly Wrapper | 0xE3D0FB6E3cB5DA61EB18b06D035052441009d1E6 | lock entrance for auto cross chain tx with fee 
 Wrapper 2.0 | 0x4b0CFdb5e1Ca898a225F9E14AfF9e4eF178a10d2 | wrapper_v2 that take native asset as fee
-Swapper | 0x3ec481143d688442E581aD7116Bf1ECC76669cfa | Curve entrance for auto cross chain tx with fee 
+Swapper | 0x00b93851e3135663AAeC351555EddEE5B01325e6 | Curve entrance for auto cross chain tx with fee 
 NFT Lock Proxy | 0x2cdfc90250EF967036838DA601099656e74bCfc5 | The NFT lockc proxy contract hash
 NFT Wrapper | 0xe2bD9dD8FAF5C4C2087Ab82eC7E63F619CcAa152 | The NFT Wrapper contract hash
 NFT Query | 0x02015dBb2Dc25Cc7313D7EDb4785c2C46F3B7FD2 | The NFT profile query contract hash
@@ -229,7 +229,7 @@ ECCM | 0x7ceA671DABFBa880aF6723bDdd6B9f4caA15C87B | Heco Cross Chain Manager con
 Lock Proxy| 0x020c15e7d08A8Ec7D35bCf3AC3CCbF0BBf2704e6 | Heco Asset Proxy contract hash
 Poly Wrapper | 0x4fE451186c0D69205ACc1fA00FD75fc6d71e47eE | lock entrance for auto cross chain tx with fee 
 Wrapper 2.0 | 0x1B0C55be400e2a7D924032B257Fbc75Bbfd256E7 | wrapper_v2 that take native asset as fee
-Swapper | 0x70f4d1176f9276ab4B31658f58F7473858F2b550 | Curve entrance for auto cross chain tx with fee 
+Swapper | 0xD98Ee7Ca1B33e60C75E3cd9493c566fc857592c8 | Curve entrance for auto cross chain tx with fee 
 NFT Lock Proxy | 0x2cdfc90250EF967036838DA601099656e74bCfc5 | The NFT lockc proxy contract hash
 NFT Wrapper | 0xe2bD9dD8FAF5C4C2087Ab82eC7E63F619CcAa152 | The NFT Wrapper contract hash
 NFT Query | 0x56C9491F2aC2Bc623AB890D2Db16C98E1aBd1FBd | The NFT profile query contract hash
@@ -280,12 +280,22 @@ DOGK | 0x42b1495e9bf2de0ae6510d50584a0799166542f7 | DOGK
 ## Curve
 Type | Contract Hash | Desc
 ---|---|---
+Pool-1  | 0xa6157DaBDda80F8c956962AB7739f17F54BAAB7F | USDT-BUSD-HUSD pool address in Curve
+Pool-1-LP | 0x23dF75A64Dc59d2884BE25021d7A424B18709A41 | LP token of pool-1
 USDT    | 0x061a87Aac7695b9cf9482043175fd3bE3374AB66 | USDT mapping asset in Curve
 BUSD    | 0xBFC0457548BB90D54123a71a7310BaDa8f4662c0 | BUSD mapping asset in Curve
 HUSD    | 0x0926B2DB9D053E0022419093CCd57b92301fB736 | HUSD mapping asset in Curve
+Pool-2  | 0x560470C9C6E45fBe47c792E90B691015f0614A9c | ETH pool address in Curve
+Pool-2-LP | 0x0C1EE7a93bd92437f0528aDcf4a8607244A946DE | LP token of pool-2
 WETH    | 0x83f28703A5761Fe96e4c68Ea5861519f59928DDA | Eth WETH mapping asset in Curve
 BETH    | 0xdCb4775d6F7AA96B2E850b9ee6674FC6A47b85F6 | Bsc ETH mapping asset in Curve
 HETH    | 0xF554231385f15C89A5A5Eb3f96C1A9dfaCA9678d | Heco ETH mapping asset in Curve
+Pool-3  | 0xd709d95479Fe244b27A34441D497859960893Ec6 | BNB pool address in Curve
+Pool-3-LP | 0xc0Fa229d87cA58B80C3D4F1254df5214DdfE4fF7 | LP token of pool-3
+EBNB    | 0xB7a66a6007606c64bD3b2D771fFA793Ada28E7e4 | Eth BNB mapping asset in Curve
+WBNB    | 0x351a102B2c1a9121f7926E3f47c36Ee947786B3F | Bsc WBNB mapping asset in Curve
+
+
 
 
 ## OKEx
