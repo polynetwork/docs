@@ -2,8 +2,8 @@
 
 This's cross chain asset contract info ONLY in <strong>MAINNET</strong> mode, it's used to bind asset mapping in different chain, if the name ends with (s) on behalf of the asset is mapping.
 
-## LockProxy Contract Addresses
-Chain | LockProxy Contract Addresses
+## Poly Relayer Addresses
+Chain | Relayer Addresses
 ---|---
 ETH | <ul><li> 0x7a1979f8dc3c1e25f506c77c4c0dd0c2113b6cd8</li><li>0x8c5e8eb7eb33d61d1e3c6e21fbc2fca6bd2f2d86</li><li>0x0da171a973608cad5bb78585b2ae5373fad2c483</li></ul>
 HECO | <ul><li> 0x7a1979f8dc3c1e25f506c77c4c0dd0c2113b6cd8</li><li>0x8c5e8eb7eb33d61d1e3c6e21fbc2fca6bd2f2d86</li><li>0x7573c6692c09b4299daaecd23e200673b71a5522</li><li>0xf124755e7551034067684c91718a9619d4cf9e73</li><li>0x0da171a973608cad5bb78585b2ae5373fad2c483</li></ul>
