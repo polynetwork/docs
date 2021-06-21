@@ -3,36 +3,14 @@
 This's cross chain asset contract info ONLY in <strong>MAINNET</strong> mode, it's used to bind asset mapping in different chain, if the name ends with (s) on behalf of the asset is mapping.
 
 ## LockProxy Contract Addresses
-### ETH
-- 0x7a1979f8dc3c1e25f506c77c4c0dd0c2113b6cd8
-- 0x8c5e8eb7eb33d61d1e3c6e21fbc2fca6bd2f2d86
-- 0x0da171a973608cad5bb78585b2ae5373fad2c483
-
-### HECO
-- 0x7a1979f8dc3c1e25f506c77c4c0dd0c2113b6cd8
-- 0x8c5e8eb7eb33d61d1e3c6e21fbc2fca6bd2f2d86
-- 0x7573c6692c09b4299daaecd23e200673b71a5522
-- 0xf124755e7551034067684c91718a9619d4cf9e73
-- 0x0da171a973608cad5bb78585b2ae5373fad2c483
-
-### BSC
-- 0xa3c419D2b37105A4ebE4f42698d220E59295a190
-- 0x446f136f81196b5708f3751aebd8025abbae8790
-- 0xf5340ea4651470df9d23834fb382a5e532addae9
-- 0xa0872c79900fed7a1a41e046d3665806a14c3bab
-- 0x5ad1361f2957b717cc3055bc20c7095b989a2c31
-- 0x680766d06024619425b5a8feded05c2032932317
-- 0x0da171a973608cad5bb78585b2ae5373fad2c483
-
-### OK
-- 0x0da171a973608cad5bb78585b2ae5373fad2c483
-- 0xffca5f560be8ebabfe19cd8a6150f8978eb560df
-
-### NEO
-- ALjgBt3QdfoENa11e9yToy3bn16b685EZS
-
-### ONT
-- AM5F45WQyVSCYVpVbu8RK6cZZgk1GdDg2Q
+Chain | LockProxy Contract Addresses
+---|---
+ETH | <ul><li> 0x7a1979f8dc3c1e25f506c77c4c0dd0c2113b6cd8</li><li>0x8c5e8eb7eb33d61d1e3c6e21fbc2fca6bd2f2d86</li><li>0x0da171a973608cad5bb78585b2ae5373fad2c483</li></ul>
+HECO | <ul><li> 0x7a1979f8dc3c1e25f506c77c4c0dd0c2113b6cd8</li><li>0x8c5e8eb7eb33d61d1e3c6e21fbc2fca6bd2f2d86</li><li>0x7573c6692c09b4299daaecd23e200673b71a5522</li><li>0xf124755e7551034067684c91718a9619d4cf9e73</li><li>0x0da171a973608cad5bb78585b2ae5373fad2c483</li></ul>
+BSC | <ul><li> 0xa3c419D2b37105A4ebE4f42698d220E59295a190</li><li>0x446f136f81196b5708f3751aebd8025abbae8790</li><li>0xf5340ea4651470df9d23834fb382a5e532addae9</li><li>0xa0872c79900fed7a1a41e046d3665806a14c3bab</li><li>0x5ad1361f2957b717cc3055bc20c7095b989a2c31</li><li>0x680766d06024619425b5a8feded05c2032932317</li><li>0x0da171a973608cad5bb78585b2ae5373fad2c483</li></ul>
+OK | <ul><li> 0x0da171a973608cad5bb78585b2ae5373fad2c483</li><li>0xffca5f560be8ebabfe19cd8a6150f8978eb560df</li></ul>
+NEO | <ul><li>cALjgBt3QdfoENa11e9yToy3bn16b685EZS</li></ul>
+ONT | <ul><li>AM5F45WQyVSCYVpVbu8RK6cZZgk1GdDg2Q</li></ul>
 
 
 ## Decentralized Application MainNet Nodes
