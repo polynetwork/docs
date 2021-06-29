@@ -2,6 +2,16 @@
 
 This's cross chain asset contract info ONLY in <strong>MAINNET</strong> mode, it's used to bind asset mapping in different chain, if the name ends with (s) on behalf of the asset is mapping.
 
+## Poly Relayer Addresses
+Chain | Relayer Addresses
+---|---
+ETH | <ul><li> 0x7a1979f8dc3c1e25f506c77c4c0dd0c2113b6cd8</li><li>0x8c5e8eb7eb33d61d1e3c6e21fbc2fca6bd2f2d86</li><li>0x0da171a973608cad5bb78585b2ae5373fad2c483</li></ul>
+HECO | <ul><li> 0x7a1979f8dc3c1e25f506c77c4c0dd0c2113b6cd8</li><li>0x8c5e8eb7eb33d61d1e3c6e21fbc2fca6bd2f2d86</li><li>0x7573c6692c09b4299daaecd23e200673b71a5522</li><li>0xf124755e7551034067684c91718a9619d4cf9e73</li><li>0x0da171a973608cad5bb78585b2ae5373fad2c483</li></ul>
+BSC | <ul><li> 0xa3c419D2b37105A4ebE4f42698d220E59295a190</li><li>0x446f136f81196b5708f3751aebd8025abbae8790</li><li>0xf5340ea4651470df9d23834fb382a5e532addae9</li><li>0xa0872c79900fed7a1a41e046d3665806a14c3bab</li><li>0x5ad1361f2957b717cc3055bc20c7095b989a2c31</li><li>0x680766d06024619425b5a8feded05c2032932317</li><li>0x0da171a973608cad5bb78585b2ae5373fad2c483</li></ul>
+OK | <ul><li> 0x0da171a973608cad5bb78585b2ae5373fad2c483</li><li>0xffca5f560be8ebabfe19cd8a6150f8978eb560df</li></ul>
+NEO | <ul><li>ALjgBt3QdfoENa11e9yToy3bn16b685EZS</li></ul>
+ONT | <ul><li>AM5F45WQyVSCYVpVbu8RK6cZZgk1GdDg2Q</li></ul>
+
 
 ## Decentralized Application MainNet Nodes
 Chain | IP | Rpc Port
@@ -89,6 +99,9 @@ HD | 0x6ce654aC973D326F89f0685E7459542641410eD9 | HD
 GOF | 0x488E0369f9BC5C40C002eA7c1fe4fd01A198801c | GOF
 WETH| 0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2 | WETH
 ROSN | 0x651Cd665bD558175A956fb3D72206eA08Eb3dF5b | ROSE
+SPHRI | 0x8A0cdfaB62eD35b836DC0633482798421C81b3Ec | SPHRI
+SLD | 0x1ef6a7e2c966fb7c5403efefde38338b1a95a084 | SLD
+HDT | 0x1cc945Be7d0D2C852d0096A8b5714b44eD21D5D3 | HDT
 
 
 ## Ethereum: nrenBTC/nsBTC/nTUSD/nUSDC/nwBTC/nwETH/nDAI
@@ -217,7 +230,8 @@ ROSN | 0x651Cd665bD558175A956fb3D72206eA08Eb3dF5b | ROSE
 HKR | 0xb23236a6d1af62bd4809e0ef933cfd7a6917cd68 | HKR
 HAI | 0x971fe540feff9d91d6fbb93c27fbb527bfb96a3e | HAI
 DOGK | 0x42b1495e9bf2de0ae6510d50584a0799166542f7 | DOGK
-
+SPHRI | 0x8B7a0007F6E0ddb16cd14f34af3306947fC698a6 | SPHRI
+SLD | 0x1ef6a7e2c966fb7c5403efefde38338b1a95a084 | SLD
 
 
 ## Huobi Eco Chain(HECO)
@@ -274,6 +288,7 @@ ETH | 0x64ff637fb478863b7468bc97d30a5bf3a428a1fd | ETH
 HKR | 0xa74b0514b403bdb573bf22df0062d43f6498a164 | HKR
 HAI | 0x7663bc3ae9858cae71722aedee364e125c278bdf | HAI
 DOGK | 0x42b1495e9bf2de0ae6510d50584a0799166542f7 | DOGK
+HDT | 0x3d5d17243307b1e236bfbded127a7f4d0b62e185 | HDT
 
 
 
