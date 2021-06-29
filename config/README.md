@@ -309,6 +309,11 @@ Pool-3  | 0xd709d95479Fe244b27A34441D497859960893Ec6 | BNB pool address in Curve
 Pool-3-LP | 0xc0Fa229d87cA58B80C3D4F1254df5214DdfE4fF7 | LP token of pool-3
 EBNB    | 0xB7a66a6007606c64bD3b2D771fFA793Ada28E7e4 | Eth BNB mapping asset in Curve
 WBNB    | 0x351a102B2c1a9121f7926E3f47c36Ee947786B3F | Bsc WBNB mapping asset in Curve
+Pool-4  | 0x6c27318a0923369de04df7Edb818744641FD9602 | BTC pool address in Curve
+Pool-4-LP | 0xCC0061012d49331Bf6Edf8d7a8cceC087F81E982 | LP token of pool-4
+WBTC    | 0x7648bDF3B4f26623570bE4DD387Ed034F2E95aad | Eth WBTC mapping asset in Curve
+BTCB    | 0x2367e9Cf3355EA714236e6719B91336D29D6D59D | Bsc BTC mapping asset in Curve
+HBTC    | 0x285F30fD447598178d3B8adBdc0839B0c72C26eb | Heco BTC mapping asset in Curve
 
 
 
